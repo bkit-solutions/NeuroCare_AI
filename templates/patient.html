@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="w-full max-w-4xl mx-auto px-4">
+    <div class="glass-card rounded-2xl shadow-lg overflow-hidden mb-8">
+        <div class="p-5 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+            <h3 class="text-xl font-bold"><i class="fas fa-user-circle mr-2"></i> Patient Details</h3>
+        </div>
+        <div class="p-6">
+            <form id="patientDetailsForm" action="{{ url_for('get_recommendations') }}" method="POST">
+                <!-- Personal Information -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-medium mb-3 text-[var(--vibrant-red)]">Personal Information</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="age" class="block text-sm font-medium mb-2">Age</label>
+                            <input type="number" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="age" name="age" min="1" max="120" required>
+                        </div>
+                        <div>
+                            <label for="gender" class="block text-sm font-medium mb-2">Gender</label>
+                            <select class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="gender" name="gender" required>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medical History -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-medium mb-3 text-[var(--vibrant-red)]">Medical History</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="hypertension" class="block text-sm font-medium mb-2">Hypertension</label>
+                            <select class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="hypertension" name="hypertension" required>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="heart_disease" class="block text-sm font-medium mb-2">Heart Disease</label>
+                            <select class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="heart_disease" name="heart_disease" required>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lifestyle Factors -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-medium mb-3 text-[var(--vibrant-red)]">Lifestyle Factors</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="work_type" class="block text-sm font-medium mb-2">Work Type</label>
+                            <select class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="work_type" name="work_type" required>
+                                <option value="Private">Private Sector</option>
+                                <option value="Self-employed">Self-employed</option>
+                                <option value="Govt_job">Government Job</option>
+                                <option value="Never_worked">Never Worked</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="Residence_type" class="block text-sm font-medium mb-2">Residence Type</label>
+                            <select class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="Residence_type" name="Residence_type" required>
+                                <option value="Urban">Urban</option>
+                                <option value="Rural">Rural</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Habits & History -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-medium mb-3 text-[var(--vibrant-red)]">Habits & Symptoms</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="smoking_status" class="block text-sm font-medium mb-2">Smoking Status</label>
+                            <select class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="smoking_status" name="smoking_status" required>
+                                <option value="never smoked">Never Smoked</option>
+                                <option value="formerly smoked">Former Smoker</option>
+                                <option value="smokes">Current Smoker</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="symptoms_duration" class="block text-sm font-medium mb-2">Symptoms Duration (Days)</label>
+                            <input type="number" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="symptoms_duration" name="symptoms_duration" min="0" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Physical Metrics -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-medium mb-3 text-[var(--vibrant-red)]">Physical Metrics</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="avg_glucose_level" class="block text-sm font-medium mb-2">Average Glucose Level (mg/dL)</label>
+                            <input type="number" step="0.1" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="avg_glucose_level" name="avg_glucose_level" required>
+                        </div>
+                        <div>
+                            <label for="bmi" class="block text-sm font-medium mb-2">BMI</label>
+                            <input type="number" step="0.1" class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="bmi" name="bmi" min="10" max="50" readonly required>
+                            <span id="bmiStatus" class="text-sm text-gray-400"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BMI Calculator -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-medium mb-3 text-[var(--vibrant-red)]">BMI Calculator</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="weight" class="block text-sm font-medium mb-2">Weight (kg)</label>
+                            <input type="range" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer" 
+                                id="weight" name="weight" min="30" max="150" step="0.5" value="70" oninput="updateBMI()">
+                            <span id="weightValue" class="text-sm mt-1 block">70 kg</span>
+                        </div>
+                        <div>
+                            <label for="height" class="block text-sm font-medium mb-2">Height (cm)</label>
+                            <input type="range" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer" 
+                                id="height" name="height" min="100" max="220" step="1" value="170" oninput="updateBMI()">
+                            <span id="heightValue" class="text-sm mt-1 block">170 cm</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="mb-6">
+                    <h4 class="text-lg font-medium mb-3 text-[var(--vibrant-red)]">Additional Information</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="ever_married" class="block text-sm font-medium mb-2">Marital Status</label>
+                            <select class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="ever_married" name="ever_married" required>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="medication_use" class="block text-sm font-medium mb-2">Current Medication Use</label>
+                            <select class="w-full px-4 py-2 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" 
+                                id="medication_use" name="medication_use" required>
+                                <option value="0">No</option>
+                                <option value="1">Yes</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary w-full rounded-full py-3 px-6 mt-6 font-medium text-white">
+                    <i class="fas fa-prescription mr-2"></i>Generate Recommendations
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function updateBMI() {
+        let weight = document.getElementById("weight").value;
+        let height = document.getElementById("height").value;
+
+        document.getElementById("weightValue").innerText = weight + " kg";
+        document.getElementById("heightValue").innerText = height + " cm";
+
+        let bmi = (weight / ((height / 100) * (height / 100))).toFixed(1);
+        document.getElementById("bmi").value = bmi;
+
+        document.getElementById("bmiStatus").innerText = getBMIStatus(bmi);
+    }
+
+    function getBMIStatus(bmi) {
+        if (bmi < 18.5) return "Underweight 😟";
+        else if (bmi < 24.9) return "Normal 😊";
+        else if (bmi < 29.9) return "Overweight 😐";
+        else return "Obese 😨";
+    }
+
+    updateBMI(); // Initialize BMI on page load
+</script>
+{% endblock %}

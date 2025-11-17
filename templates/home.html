@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroCare AI: Automated Stroke Detection & Care Guidance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --vibrant-red: #FFD700;
+            /* Changed from #FF204E to gold yellow */
+            --dark-red: #DAA520;
+            /* Changed from #A0153E to goldenrod */
+            --deep-purple: #5D0E41;
+            --dark-blue: #00224D;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #00224D;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(93, 14, 65, 0.95) 0%, rgba(0, 34, 77, 0.9) 100%);
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #5D0E41 0%, #00224D 100%);
+        }
+
+        .glass-card {
+            background: rgba(93, 14, 65, 0.2);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            /* Changed from rgba(255, 32, 78, 0.1) */
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.2);
+            /* Changed from rgba(255, 32, 78, 0.2) */
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            /* Changed from rgba(255, 32, 78, 0.3) */
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--vibrant-red);
+        }
+
+        .glass-nav {
+            background: rgba(0, 34, 77, 0.7);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+            /* Changed from rgba(255, 32, 78, 0.2) */
+        }
+
+        /* Add reflection effect */
+        .reflection {
+            position: relative;
+        }
+
+        .reflection::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 5%;
+            width: 90%;
+            height: 20px;
+            background: linear-gradient(to bottom, rgba(255, 215, 0, 0.3), transparent);
+            /* Changed from rgba(255, 32, 78, 0.3) */
+            filter: blur(4px);
+            transform: scaleY(-1);
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .btn-primary {
+            background-color: var(--vibrant-red);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-red);
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+            /* Changed from rgba(255, 32, 78, 0.3) */
+        }
+    </style>
+</head>
+
+<body class="relative text-white">
+    <!-- Navigation -->
+    <!-- Navigation -->
+    <nav class="fixed w-full glass-nav z-50 shadow-lg">
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
+            <a href="{{ url_for('home') }}#home">
+                <h1 class="text-xl sm:text-2xl font-bold text-white">NeuroCare AI</h1>
+            </a>
+            <!-- Burger menu only visible on mobile -->
+            <div class="md:hidden cursor-pointer text-3xl text-white" id="burger-menu">&#9776;</div>
+
+            <!-- Full menu visible only on md and up -->
+            <ul id="menu" class="hidden md:flex space-x-4 lg:space-x-8">
+                <li><a href="#home"
+                        class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Home</a>
+                </li>
+                <li><a href="#about"
+                        class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">About
+                        Us</a></li>
+                <li><a href="#how-it-works"
+                        class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">How
+                        It Works</a></li>
+                <li><a href="#insights"
+                        class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Insights</a>
+                </li>
+                <li><a href="#team"
+                        class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Team</a>
+                </li>
+                <li><a href="#contact"
+                        class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Mobile Menu (toggle this via JS) -->
+        <div id="mobile-menu"
+            class="hidden bg-[#001a3a]/95 backdrop-blur-md w-full absolute top-full left-0 p-4 shadow-lg">
+            <ul class="flex flex-col space-y-3">
+                <li><a href="#home"
+                        class="nav-link block py-2 px-4 hover:bg-[#002a5a] rounded transition duration-300">Home</a>
+                </li>
+                <li><a href="#about"
+                        class="nav-link block py-2 px-4 hover:bg-[#002a5a] rounded transition duration-300">About Us</a>
+                </li>
+                <li><a href="#how-it-works"
+                        class="nav-link block py-2 px-4 hover:bg-[#002a5a] rounded transition duration-300">How It
+                        Works</a></li>
+                <li><a href="#insights"
+                        class="nav-link block py-2 px-4 hover:bg-[#002a5a] rounded transition duration-300">Insights</a>
+                </li>
+                <li><a href="#team"
+                        class="nav-link block py-2 px-4 hover:bg-[#002a5a] rounded transition duration-300">Team</a>
+                </li>
+                <li><a href="#contact"
+                        class="nav-link block py-2 px-4 hover:bg-[#002a5a] rounded transition duration-300">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center relative overflow-hidden py-16 sm:py-0">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-br from-[#00224D] to-[#003366] opacity-95"></div>
+            <img src="static/Picture3.jpg" alt="Medical AI Background" class="w-full h-full object-cover opacity-20">
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10 mt-16 sm:mt-0">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <!-- Left Side - Brain Image (responsive and centered on mobile) -->
+                <div
+                    class="glass-card p-3 rounded-xl shadow-2xl bg-white/5 backdrop-blur-sm border border-white/10 max-w-md mx-auto lg:mx-0 order-2 lg:order-1">
+                    <img src="static/Picture4.png" alt="Brain Scan"
+                        class="w-full rounded-lg shadow-lg transition-all duration-700 transform hover:scale-105 pulse-animation"
+                        id="brain-image">
+                </div>
+
+                <!-- Right Side - Content (centered on mobile, left-aligned on desktop) -->
+                <div class="text-center lg:text-left animate__animated animate__fadeInUp order-1 lg:order-2">
+                    <h1
+                        class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-teal-100 to-cyan-100">
+                        NeuroCare AI: Automated Stroke Detection
+                    </h1>
+                    <h2
+                        class="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 text-white  from-teal-300 to-cyan-500">
+                        Patient Care Guidance Using Advanced AI
+                    </h2>
+                    <p class="text-sm sm:text-base md:text-lg text-white leading-relaxed mb-4">
+                        Early detection saves lives. Our AI-powered platform analyzes CT scans in real-time to provide
+                        instant stroke risk assessment and personalized care recommendations.
+                    </p>
+
+                    <!-- Action Buttons - Responsive layout -->
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 mb-6">
+                        <a href="{{ url_for('analysis') }}"
+                            class="btn-primary inline-block px-4 py-2 rounded-full text-base font-semibold transition-all duration-300 shadow-lg text-center bg-gradient-to-r from-teal-400 to-cyan-500 hover:from-teal-500 hover:to-cyan-600 transform hover:-translate-y-1">
+                            Get Started Now
+                        </a>
+                        <a href="#about"
+                            class="btn-secondary inline-block px-4 py-2 rounded-full text-base font-semibold transition-all duration-300 border border-cyan-300 text-center hover:bg-cyan-300 hover:text-[#00224D] transform hover:-translate-y-1">
+                            Learn More
+                        </a>
+                    </div>
+
+                    <!-- Stats Cards with Loading Animation - Responsive grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 stats-container">
+                        <div
+                            class="stat-card bg-gradient-to-br from-[#0a2d50] to-[#144272] p-3 rounded-lg shadow-lg border border-cyan-800/30 transform hover:scale-105 transition-all duration-300">
+                            <div class="text-center">
+                                <h3 class="text-white text-sm font-medium">Stroke Detection</h3>
+                                <div class="counter-container">
+                                    <span class="text-xl sm:text-2xl font-bold counter" data-target="98">0</span>
+                                    <span class="text-xl sm:text-2xl font-bold">%</span>
+                                </div>
+                                <p class="text-xs text-white">Diagnostic Accuracy</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="stat-card bg-gradient-to-br from-[#0a2d50] to-[#144272] p-3 rounded-lg shadow-lg border border-cyan-800/30 transform hover:scale-105 transition-all duration-300">
+                            <div class="text-center">
+                                <h3 class="text-white text-sm font-medium">Care Guidance</h3>
+                                <div class="counter-container">
+                                    <span class="text-xl sm:text-2xl font-bold counter" data-target="94">0</span>
+                                    <span class="text-xl sm:text-2xl font-bold">%</span>
+                                </div>
+                                <p class="text-xs text-white">Recommendation Accuracy</p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="stat-card bg-gradient-to-br from-[#0a2d50] to-[#144272] p-3 rounded-lg shadow-lg border border-cyan-800/30 transform hover:scale-105 transition-all duration-300">
+                            <div class="text-center">
+                                <h3 class="text-white text-sm font-medium">Trusted By</h3>
+                                <div class="counter-container">
+                                    <span class="text-xl sm:text-2xl font-bold counter" data-target="150">0</span>
+                                    <span class="text-xl sm:text-2xl font-bold">+</span>
+                                </div>
+                                <p class="text-xs text-white">Medical Institutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating particles for visual interest -->
+        <div class="particles absolute inset-0 z-0 overflow-hidden"></div>
+
+        <!-- CSS for animations and effects -->
+        <style>
+            /* Pulse animation for brain image */
+            .pulse-animation {
+                animation: subtle-pulse 6s infinite ease-in-out;
+            }
+
+            @keyframes subtle-pulse {
+                0% {
+                    opacity: 0.85;
+                    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.3));
+                }
+
+                50% {
+                    opacity: 1;
+                    filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5));
+                }
+
+                100% {
+                    opacity: 0.85;
+                    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.3));
+                }
+            }
+
+            /* Animation for the stats counters */
+            .stats-container {
+                opacity: 0;
+                transform: translateY(10px);
+                animation: fadeInUp 1s ease forwards;
+                animation-delay: 0.5s;
+            }
+
+            @keyframes fadeInUp {
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            /* Glass card effect */
+            .glass-card {
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+                backdrop-filter: blur(8px);
+                transition: all 0.3s ease;
+            }
+
+            .glass-card:hover {
+                box-shadow: 0 12px 48px rgba(0, 150, 255, 0.3);
+            }
+
+            /* Nav link styles */
+            .nav-link {
+                color: white;
+                position: relative;
+            }
+
+            .nav-link::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 2px;
+                bottom: -4px;
+                left: 0;
+                background: var(--vibrant-red, #ff3e55);
+                transition: width 0.3s;
+            }
+
+            .nav-link:hover::after {
+                width: 100%;
+            }
+
+            /* Enhanced glass-nav effect */
+            .glass-nav {
+                background: rgba(0, 34, 77, 0.7);
+                backdrop-filter: blur(10px);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        </style>
+
+        <!-- JavaScript for counter animation and mobile menu -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Mobile menu toggle
+                const burgerMenu = document.getElementById('burger-menu');
+                const mobileMenu = document.getElementById('mobile-menu');
+                const desktopMenu = document.getElementById('menu');
+
+                burgerMenu.addEventListener('click', () => {
+                    // Make sure desktop menu stays hidden on mobile
+                    if (window.innerWidth < 768) {
+                        desktopMenu.classList.add('hidden'); // keep it hidden
+                        mobileMenu.classList.toggle('hidden'); // toggle mobile menu
+                    }
+                });
+
+                // Close mobile menu when clicking on a link
+                const mobileLinks = mobileMenu.querySelectorAll('a');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+
+
+                // Start counting when element is in viewport
+                const startCounters = () => {
+                    const counters = document.querySelectorAll('.counter');
+                    const speed = 200;
+
+                    counters.forEach(counter => {
+                        const target = +counter.getAttribute('data-target');
+                        const increment = target / speed;
+
+                        const updateCount = () => {
+                            const count = +counter.innerText;
+                            if (count < target) {
+                                counter.innerText = Math.ceil(count + increment);
+                                setTimeout(updateCount, 30);
+                            } else {
+                                counter.innerText = target;
+                            }
+                        };
+
+                        updateCount();
+                    });
+                };
+
+                // Intersection Observer for counter animation
+                const statsContainer = document.querySelector('.stats-container');
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            setTimeout(startCounters, 800);
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+
+                observer.observe(statsContainer);
+
+                // Add particles (responsive number based on screen size)
+                const particlesContainer = document.querySelector('.particles');
+                const particleCount = window.innerWidth < 768 ? 8 : 15;
+
+                for (let i = 0; i < particleCount; i++) {
+                    const particle = document.createElement('div');
+                    particle.style.position = 'absolute';
+                    particle.style.width = Math.random() * 4 + 1 + 'px';
+                    particle.style.height = particle.style.width;
+                    particle.style.background = `rgba(${Math.random() * 100 + 155}, ${Math.random() * 200 + 55}, 255, ${Math.random() * 0.3 + 0.1})`;
+                    particle.style.borderRadius = '50%';
+                    particle.style.top = Math.random() * 100 + '%';
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.animation = `float ${Math.random() * 15 + 5}s linear infinite`;
+                    particle.style.opacity = Math.random() * 0.3 + 0.1;
+                    particlesContainer.appendChild(particle);
+                }
+            });
+
+            // Animation for floating particles
+            document.styleSheets[0].insertRule(`
+            @keyframes float {
+                0% { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 0.1; }
+                50% { transform: translate(${Math.random() * 50}px, ${Math.random() * 50}px) rotate(${Math.random() * 360}deg) scale(${Math.random() * 0.5 + 0.5}); opacity: 0.3; }
+                100% { transform: translate(0, 0) rotate(0deg) scale(1); opacity: 0.1; }
+            }
+        `, 0);
+
+            // Add resize event listener for better responsiveness
+            window.addEventListener('resize', () => {
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (window.innerWidth >= 768) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+
+
+
+        </script>
+    </section>
+    <!-- About Us Section (Responsive & Interactive) -->
+    <section id="about" class="min-h-screen flex items-center justify-center px-6 relative z-10 bg-[#00224D]">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between w-full max-w-6xl">
+
+
+            <!-- Background Image with Overlay -->
+            <div class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-[#00224D] opacity-90"></div>
+                <img src="static\Picture1.png" alt="Medical AI Background"
+                    class="w-full h-full object-cover opacity-15">
+            </div>
+
+            <!-- About Image -->
+            <div class="w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
+                <div class="glass-card p-4 rounded-2xl reflection">
+                    <img src="static\Picture1.png" alt="Brain Scan"
+                        class="w-[500px] h-auto rounded-lg shadow-lg transition-all duration-500 transform will-change-transform"
+                        id="image">
+                </div>
+            </div>
+
+
+            <!-- About Content + Mission & Vision -->
+            <div class="w-full md:w-1/2 flex flex-col justify-center text-center space-y-6">
+
+                <!-- About Description -->
+                <h2 class="text-4xl font-bold text-white animate-fade-in-up">About Us</h2>
+                <p class="text-lg text-gray-200 max-w-lg mx-auto animate-fade-in-up">
+                    <strong>NeuroCare AI</strong> is dedicated to revolutionizing stroke detection using AI-driven
+                    technology.
+                    Our goal is to provide fast, accurate, and reliable stroke risk assessments.
+                </p>
+
+                <!-- Mission & Vision (Side by Side) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- Mission -->
+                    <div class="glass-card p-6 rounded-xl transition-all duration-500 hover:scale-105 will-change-transform"
+                        id="mission">
+                        <div class="flex justify-center mb-3">
+                            <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2l3 7h7l-5 5 2 8-7-4-7 4 2-8-5-5h7l3-7z" stroke="#FFD700" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[var(--vibrant-red)]">Our Mission</h3>
+                        <p class="text-gray-100 text-sm mt-2 animate-fade-in-up">
+                            To leverage AI in detecting strokes early and guiding treatment paths, ultimately improving
+                            survival rates and patient outcomes.
+                        </p>
+                    </div>
+
+                    <!-- Vision -->
+                    <div class="glass-card p-6 rounded-xl transition-all duration-500 hover:scale-105 will-change-transform"
+                        id="vision">
+                        <div class="flex justify-center mb-3">
+                            <svg width="50" height="50" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2zm0 5v5l3 3" stroke="#FFD700"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-[var(--vibrant-red)]">Our Vision</h3>
+                        <p class="text-gray-100 text-sm mt-2 animate-fade-in-up">
+                            A future where AI-powered healthcare solutions assist medical professionals in making
+                            life-saving decisions with accuracy and efficiency.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works – Stroke Detection & Recommendation using AI -->
+    <section id="how-it-works" class="py-20 relative">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-900 to-purple-900 opacity-90"></div>
+            <img src="static\brain-image.png" alt="Brain Background" class="w-full h-full object-cover opacity-55">
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-bold text-center mb-16 section-title animate-fade-in-up text-white">How NeuroCare
+                AI Works</h2>
+            <p class="text-center text-gray-200 mb-10">
+                NeuroCare AI leverages deep learning to analyze CT scan images and detect signs of stroke efficiently.
+            </p>
+
+            <div class="grid md:grid-cols-4 gap-8 animate-fade-in-up">
+                <!-- Step 1: Scan Upload -->
+                <div class="glass-card p-6 rounded-xl text-center reflection"
+                    style="border-bottom: 3px solid #FFD700; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px);">
+                    <div class="flex justify-center mb-4">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 16V4m0 0L8 8m4-4l4 4" stroke="#DAA520" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M20 16v2a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2" stroke="#DAA520" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[var(--vibrant-red)]">Scan Upload</h3>
+                    <p class="text-gray-100">Upload your CT scan images directly onto our platform for AI-powered
+                        analysis.</p>
+                </div>
+
+                <!-- Step 2: AI Analysis -->
+                <div class="glass-card p-6 rounded-xl text-center reflection"
+                    style="border-bottom: 3px solid #FFD700; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px);">
+                    <div class="flex justify-center mb-4">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2v20m6-10H6m13-4H5m14 8H5" stroke="#DAA520" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[var(--vibrant-red)]">AI Analysis</h3>
+                    <p class="text-gray-100">Our deep learning model processes CT images to detect early stroke
+                        indicators.</p>
+                </div>
+
+                <!-- Step 3: Risk Assessment -->
+                <div class="glass-card p-6 rounded-xl text-center reflection"
+                    style="border-bottom: 3px solid #FFD700; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px);">
+                    <div class="flex justify-center mb-4">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2a10 10 0 1 1-10 10A10 10 0 0 1 12 2zm0 5v5l3 3" stroke="#DAA520"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[var(--vibrant-red)]">Risk Assessment</h3>
+                    <p class="text-gray-100">The AI assigns a risk score, determining stroke type and severity stage.
+                    </p>
+                </div>
+
+                <!-- Step 4: Recommendations -->
+                <div class="glass-card p-6 rounded-xl text-center reflection"
+                    style="border-bottom: 3px solid #FFD700; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px);">
+                    <div class="flex justify-center mb-4">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2l3 7h7l-5 5 2 8-7-4-7 4 2-8-5-5h7l3-7z" stroke="#DAA520" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-[var(--vibrant-red)]">Recommendation System</h3>
+                    <p class="text-gray-100">Personalized treatment suggestions, including stroke type, doctors, and
+                        medication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add this to your CSS -->
+    <style>
+        .glass-card {
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px 0 rgba(31, 38, 135, 0.5);
+        }
+
+        .reflection::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent);
+            pointer-events: none;
+            border-radius: inherit;
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <!-- Insights Section -->
+    <section id="insights" class="py-20 relative">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-[#00224D] opacity-90"></div>
+            <img src="static\Picture2.png" alt="Medical AI Background" class="w-full h-full object-cover opacity-25">
+        </div>
+
+        <div class="container mx-auto px-6 animate-fade-in-up relative z-10">
+            <h2 class="text-4xl font-bold text-center mb-16 section-title text-white">Medical Insights</h2>
+            <p class="text-center text-gray-200 mb-10">
+                Gain valuable insights into stroke detection, treatment, and prevention using AI-driven analysis.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Stroke Types -->
+                <div class="glass-card p-8 rounded-xl reflection"
+                    style="border-left: 3px solid #5D0E41; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px);">
+                    <h3 class="text-xl font-bold mb-4 text-[var(--vibrant-red)]">Stroke Types</h3>
+                    <ul class="space-y-3 text-gray-100">
+                        <li class="flex items-center"><i class='bx bx-check mr-2 text-[var(--vibrant-red)]'></i>Ischemic
+                            Stroke – Caused by blocked arteries.</li>
+                        <li class="flex items-center"><i
+                                class='bx bx-check mr-2 text-[var(--vibrant-red)]'></i>Hemorrhagic Stroke – Caused by
+                            bleeding in the brain.</li>
+                        <li class="flex items-center"><i
+                                class='bx bx-check mr-2 text-[var(--vibrant-red)]'></i>Transient Ischemic Attack (TIA) –
+                            A temporary blockage, often called a mini-stroke.</li>
+                    </ul>
+                </div>
+
+                <!-- Treatment Approaches -->
+                <div class="glass-card p-8 rounded-xl reflection"
+                    style="border-left: 3px solid #5D0E41; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px);">
+                    <h3 class="text-xl font-bold mb-4 text-[var(--vibrant-red)]">Treatment Approaches</h3>
+                    <ul class="space-y-3 text-gray-100">
+                        <li class="flex items-center"><i
+                                class='bx bx-check mr-2 text-[var(--vibrant-red)]'></i>Medications – Blood thinners,
+                            clot busters, and antihypertensives.</li>
+                        <li class="flex items-center"><i class='bx bx-check mr-2 text-[var(--vibrant-red)]'></i>Surgical
+                            Procedures – Stent placement, clot removal, and aneurysm repair.</li>
+                        <li class="flex items-center"><i
+                                class='bx bx-check mr-2 text-[var(--vibrant-red)]'></i>Rehabilitation – Physical,
+                            speech, and occupational therapy.</li>
+                    </ul>
+                </div>
+
+                <!-- Monitoring & Prevention -->
+                <div class="glass-card p-8 rounded-xl reflection"
+                    style="border-left: 3px solid #5D0E41; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px);">
+                    <h3 class="text-xl font-bold mb-4 text-[var(--vibrant-red)]">Monitoring & Prevention</h3>
+                    <ul class="space-y-3 text-gray-100">
+                        <li class="flex items-center"><i
+                                class='bx bx-check mr-2 text-[var(--vibrant-red)]'></i>Lifestyle Changes – Healthy diet,
+                            exercise, and quitting smoking.</li>
+                        <li class="flex items-center"><i class='bx bx-check mr-2 text-[var(--vibrant-red)]'></i>Regular
+                            Check-Ups – Routine health monitoring to prevent risks.</li>
+                        <li class="flex items-center"><i
+                                class='bx bx-check mr-2 text-[var(--vibrant-red)]'></i>AI-Powered Risk Assessment –
+                            Early detection and personalized recommendations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Additional AI Insights -->
+            <div class="mt-16">
+                <h3 class="text-3xl font-bold text-center text-[var(--vibrant-red)] mb-6">AI-Powered Insights</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="glass-card p-8 rounded-xl reflection"
+                        style="border-top: 3px solid #DAA520; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px);">
+                        <h3 class="text-xl font-bold mb-4 text-[var(--vibrant-red)]">AI-Powered Stroke Detection</h3>
+                        <p class="text-gray-100">Our deep learning model analyzes CT scan images to detect strokes with
+                            high accuracy, helping in early diagnosis and treatment.</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-xl reflection"
+                        style="border-top: 3px solid #DAA520; background-color: rgba(0, 0, 0, 0.2); backdrop-filter: blur(10px);">
+                        <h3 class="text-xl font-bold mb-4 text-[var(--vibrant-red)]">Personalized Medical
+                            Recommendations</h3>
+                        <p class="text-gray-100">Using patient data, our AI system recommends stroke type, severity
+                            level, medications, and treatment duration for better healthcare outcomes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Team Section -->
+    <section id="team" class="py-20 relative">
+        <!-- Background Image with Overlay -->
+
+
+        <div class="container mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-bold text-center mb-6 section-title animate-fade-in-up text-white">Meet the Team
+            </h2>
+            <p class="text-center text-gray-200 mb-16 max-w-3xl mx-auto">
+                Our dedicated team of AI experts, designers, and developers work together to bring this innovative
+                project to life.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 animate-fade-in-up">
+                <!-- Team Member 1 -->
+                <div class="team-card p-6 rounded-xl text-center hover-lift">
+                    <div class="hexagon-wrapper mx-auto mb-6">
+                        <div class="hexagon">
+                            <img src="static/team.jpg" alt=" Team1" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Alex</h3>
+                    <p class="text-gray-300 mb-4">Project Lead </p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card p-6 rounded-xl text-center hover-lift">
+                    <div class="hexagon-wrapper mx-auto mb-6">
+                        <div class="hexagon">
+                            <img src="static/team.jpg" alt="Team2" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Danny</h3>
+                    <p class="text-gray-300 mb-4">Backend Developer</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="team-card p-6 rounded-xl text-center hover-lift">
+                    <div class="hexagon-wrapper mx-auto mb-6">
+                        <div class="hexagon">
+                            <img src="static/team.jpg" alt="Team3" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">George</h3>
+                    <p class="text-gray-300 mb-4">ML Engineer</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="team-card p-6 rounded-xl text-center hover-lift">
+                    <div class="hexagon-wrapper mx-auto mb-6">
+                        <div class="hexagon">
+                            <img src="static/Team.jpg" alt="Team4" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Lucky</h3>
+                    <p class="text-gray-300 mb-4">Frontend Developer</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Member 5 -->
+                <div class="team-card p-6 rounded-xl text-center hover-lift">
+                    <div class="hexagon-wrapper mx-auto mb-6">
+                        <div class="hexagon">
+                            <img src="static/Team.jpg" alt="Team5" class="h-full w-full object-cover">
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-white">Venus</h3>
+                    <p class="text-gray-300 mb-4">Data Analyst</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-teal-400 hover:text-teal-300 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional CSS for Team Section -->
+    <style>
+        /* Team cards styling */
+        .team-card {
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            transition: all 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px 0 rgba(31, 38, 135, 0.5);
+            border-bottom: 3px solid #FFD700;
+        }
+
+        /* Hexagon image styling */
+        .hexagon-wrapper {
+            width: 150px;
+            height: 150px;
+            position: relative;
+        }
+
+        .hexagon {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+            background: #2dd4bf;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .team-card:hover .hexagon {
+            transform: rotate(10deg);
+        }
+    </style>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-[#00224D] text-white relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-4">
+                    <p class="text-sm text-cyan-300 uppercase tracking-wider">Contact Us</p>
+                    <h2
+                        class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-cyan-300">
+                        Get in Touch</h2>
+                    <p class="text-sm text-gray-300 mt-2">Have questions or need support? Reach out to our team for
+                        assistance.</p>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-[#0a2d50] rounded-lg p-6 mb-6 border border-cyan-800/30 shadow-2xl">
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label for="name" class="block text-xs mb-1 text-cyan-100">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-[#144272] border-none rounded p-2 text-white" required />
+                            <div id="nameError" class="error-message">Please enter your name</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="email" class="block text-xs mb-1 text-cyan-100">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-[#144272] border-none rounded p-2 text-white" required />
+                            <div id="emailError" class="error-message">Please enter a valid email address</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="subject" class="block text-xs mb-1 text-cyan-100">Subject</label>
+                            <select id="subject" name="subject"
+                                class="w-full bg-[#144272] border-none rounded p-2 text-white" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div id="subjectError" class="error-message">Please select a subject</div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="message" class="block text-xs mb-1 text-cyan-100">Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="w-full bg-[#144272] border-none rounded p-2 text-white" required></textarea>
+                            <div id="messageError" class="error-message">Please enter your message</div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" id="submitButton"
+                                class="bg-gradient-to-r from-teal-400 to-cyan-500 hover:from-teal-500 hover:to-cyan-600 text-white py-2 px-6 rounded-full text-sm transition duration-300 transform hover:-translate-y-1 shadow-lg">
+                                Send Message
+                            </button>
+                            <div id="loading" class="loading mt-2 hidden"></div>
+                        </div>
+
+                        <div id="successMessage" class="success-message">
+                            Thank you! Your message has been sent successfully. We'll get back to you shortly.
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="bg-[#0a2d50] rounded-lg p-6 border border-cyan-800/30 shadow-2xl">
+                    <h3 class="text-lg font-medium mb-4 text-cyan-300">Contact Information</h3>
+
+                    <div class="flex items-start mb-4">
+                        <div class="text-teal-400 mr-3 mt-1">📍</div>
+                        <div>
+                            <p class="text-sm font-semibold text-cyan-100">Address</p>
+                            <p class="text-xs text-gray-300">123 Medical AI Street, Tech City, TX 78901</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start mb-4">
+                        <div class="text-teal-400 mr-3 mt-1">📞</div>
+                        <div>
+                            <p class="text-sm font-semibold text-cyan-100">Phone</p>
+                            <p class="text-xs text-gray-300">+1 (555) 456-7890</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="text-teal-400 mr-3 mt-1">✉️</div>
+                        <div>
+                            <p class="text-sm font-semibold text-cyan-100">Email</p>
+                            <p class="text-xs text-gray-300">support@neurocareai.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        const form = document.getElementById("contactForm");
+        const nameInput = document.getElementById("name");
+        const emailInput = document.getElementById("email");
+        const subjectInput = document.getElementById("subject");
+        const messageInput = document.getElementById("message");
+
+        const nameError = document.getElementById("nameError");
+        const emailError = document.getElementById("emailError");
+        const subjectError = document.getElementById("subjectError");
+        const messageError = document.getElementById("messageError");
+        const successMessage = document.getElementById("successMessage");
+        const loading = document.getElementById("loading");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let isValid = true;
+
+            if (nameInput.value.trim() === "") {
+                nameError.style.display = "block";
+                isValid = false;
+            } else {
+                nameError.style.display = "none";
+            }
+
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+            if (!emailInput.value.match(emailPattern)) {
+                emailError.style.display = "block";
+                isValid = false;
+            } else {
+                emailError.style.display = "none";
+            }
+
+            if (subjectInput.value === "") {
+                subjectError.style.display = "block";
+                isValid = false;
+            } else {
+                subjectError.style.display = "none";
+            }
+
+            if (messageInput.value.trim() === "") {
+                messageError.style.display = "block";
+                isValid = false;
+            } else {
+                messageError.style.display = "none";
+            }
+
+            if (isValid) {
+                loading.classList.remove("hidden");
+                setTimeout(() => {
+                    loading.classList.add("hidden");
+                    successMessage.style.display = "block";
+                    form.reset();
+                }, 1500);
+            }
+        });
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#001833] text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-4 gap-6">
+                <!-- Quick Links Column -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-bold mb-4 text-cyan-300">Quick Links</h3>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#home" class="hover:text-cyan-300 transition duration-300">Home</a></li>
+                        <li><a href="#about" class="hover:text-cyan-300 transition duration-300">About Us</a></li>
+                        <li><a href="#how-it-works" class="hover:text-cyan-300 transition duration-300">How it Works</a>
+                        </li>
+                        <li><a href="#insights" class="hover:text-cyan-300 transition duration-300">Insights</a></li>
+                        <li><a href="#team" class="hover:text-cyan-300 transition duration-300">Team</a></li>
+                        <li><a href="#contact" class="hover:text-cyan-300 transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-bold mb-4 text-cyan-300">Services</h3>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#" class="hover:text-cyan-300 transition duration-300">Stroke Detection</a></li>
+                        <li><a href="#" class="hover:text-cyan-300 transition duration-300">Risk Assessment</a></li>
+                        <li><a href="#" class="hover:text-cyan-300 transition duration-300">Patient Monitoring</a></li>
+                        <li><a href="#" class="hover:text-cyan-300 transition duration-300">Care Recommendations</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Follow Us Column -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-bold mb-4 text-cyan-300">Follow Us</h3>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-cyan-300 hover:text-white transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-cyan-300 hover:text-white transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-cyan-300 hover:text-white transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg>
+                        </a>
+                        <a href="#" class="text-cyan-300 hover:text-white transition duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4" />
+                            </svg>
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="col-span-1">
+                    <h3 class="text-sm font-bold mb-4 text-cyan-300">Newsletter</h3>
+                    <p class="text-xs text-gray-300 mb-3">Subscribe to our newsletter for the latest updates and
+                        innovations.</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Your email"
+                            class="bg-[#00224D] border border-cyan-800/50 text-xs p-2 rounded-l w-full">
+                        <button
+                            class="bg-gradient-to-r from-teal-400 to-cyan-500 text-white text-xs px-3 py-2 rounded-r">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-center mt-8 text-xs text-gray-500">
+                &copy; 2025 NeuroCare AI. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Additional JavaScript for particles if needed -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add particles for visual interest
+            const particlesContainer = document.querySelector('.particles');
+            if (particlesContainer) {
+                for (let i = 0; i < 15; i++) {
+                    const particle = document.createElement('div');
+                    particle.style.position = 'absolute';
+                    particle.style.width = Math.random() * 4 + 1 + 'px';
+                    particle.style.height = particle.style.width;
+                    particle.style.background = `rgba(${Math.random() * 100 + 155}, ${Math.random() * 200 + 55}, 255, ${Math.random() * 0.3 + 0.1})`;
+                    particle.style.borderRadius = '50%';
+                    particle.style.top = Math.random() * 100 + '%';
+                    particle.style.left = Math.random() * 100 + '%';
+                    particle.style.animation = `float ${Math.random() * 15 + 5}s linear infinite`;
+                    particle.style.opacity = Math.random() * 0.3 + 0.1;
+                    particlesContainer.appendChild(particle);
+                }
+            }
+        });
+    </script>
+
+
+
+
+
+    <!-- Additional effects for cards -->
+    <style>
+        /* Fade-in Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hover Effect */
+        .transform {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        /* Cursor Move Effect */
+        .will-change-transform {
+            will-change: transform;
+        }
+
+        /* Glow effects */
+        .glow-hover:hover {
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+            /* Changed from rgba(255, 32, 78, 0.6) */
+        }
+
+        .error-message {
+            color: #f87171;
+            /* Tailwind red-400 */
+            font-size: 0.75rem;
+            display: none;
+            margin-top: 4px;
+        }
+
+        .success-message {
+            color: #34d399;
+            /* Tailwind green-400 */
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .contact-section * {
+            pointer-events: auto;
+            z-index: 10;
+        }
+
+        .loading::after {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin: 0 auto;
+            border: 3px solid #67e8f9;
+            border-top: 3px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <script>
+        const burgerMenu = document.getElementById('burger-menu');
+        const menu = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Add 3D tilt effect to cards
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.glass-card');
+
+            cards.forEach(card => {
+                card.addEventListener('mousemove', function (e) {
+                    const rect = this.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+
+                    const xPercent = x / rect.width;
+                    const yPercent = y / rect.height;
+
+                    const xRotation = (xPercent - 0.5) * 10;
+                    const yRotation = (0.5 - yPercent) * 10;
+
+                    this.style.transform = `perspective(1000px) rotateX(${yRotation}deg) rotateY(${xRotation}deg) scale3d(1.02, 1.02, 1.02)`;
+
+                    // Add shine effect
+                    const shine = this.querySelector('.shine');
+                    if (shine) {
+                        shine.style.opacity = '0.2';
+                        shine.style.transform = `translate(${xPercent * 100}%, ${yPercent * 100}%)`;
+                    }
+                });
+
+                card.addEventListener('mouseleave', function () {
+                    this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+                    const shine = this.querySelector('.shine');
+                    if (shine) {
+                        shine.style.opacity = '0';
+                    }
+                });
+
+                // Add shine element to each card
+                const shine = document.createElement('div');
+                shine.classList.add('shine');
+                shine.style.position = 'absolute';
+                shine.style.top = '0';
+                shine.style.left = '0';
+                shine.style.right = '0';
+                shine.style.bottom = '0';
+                shine.style.background = 'radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 80%)';
+                shine.style.opacity = '0';
+                shine.style.pointerEvents = 'none';
+                shine.style.transition = 'opacity 0.3s ease';
+
+                if (card.style.position !== 'absolute' && card.style.position !== 'fixed') {
+                    card.style.position = 'relative';
+                }
+
+                card.appendChild(shine);
+            });
+        });
+
+
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const contactForm = document.getElementById("contactForm");
+            const nameField = document.getElementById("name");
+            const emailField = document.getElementById("email");
+            const subjectField = document.getElementById("subject");
+            const messageField = document.getElementById("message");
+            const successMessage = document.getElementById("successMessage");
+            const loading = document.getElementById("loading");
+
+            //document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Simple Validation
+            const name = document.getElementById("name");
+            const email = document.getElementById("email");
+            const subject = document.getElementById("subject");
+            const message = document.getElementById("message");
+
+            let isValid = true;
+
+            if (!name.value.trim()) {
+                document.getElementById("nameError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("nameError").style.display = "none";
+            }
+
+            if (!email.validity.valid) {
+                document.getElementById("emailError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("emailError").style.display = "none";
+            }
+
+            if (!subject.value) {
+                document.getElementById("subjectError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("subjectError").style.display = "none";
+            }
+
+            if (!message.value.trim()) {
+                document.getElementById("messageError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("messageError").style.display = "none";
+            }
+
+            if (isValid) {
+                document.getElementById("successMessage").style.display = "block";
+                setTimeout(() => {
+                    document.getElementById("successMessage").style.display = "none";
+                }, 5000);
+                this.reset();
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

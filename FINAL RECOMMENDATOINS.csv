@@ -1,0 +1,1223 @@
+gender,age,hypertension,heart_disease,ever_married,work_type,Residence_type,avg_glucose_level,bmi,smoking_status,medication_use,symptoms_duration,stroke,stroke_stage,stroke_type,recommended_doctor,medication,recommended_duration
+Male,67,0,1,Yes,Private,Urban,229,36.6,formerly smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,80,0,1,Yes,Private,Rural,106,32.5,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,49,0,0,Yes,Private,Urban,171,34.4,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,1,0,Yes,Self-employed,Rural,174,24.0,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,0,Yes,Private,Urban,186,29.0,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,74,1,1,Yes,Private,Rural,70,27.4,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,0,0,No,Private,Urban,94,22.8,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Female,81,1,0,Yes,Private,Rural,80,29.7,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,61,0,1,Yes,Govt_job,Rural,120,36.8,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,54,0,0,Yes,Private,Urban,105,27.3,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,79,0,1,Yes,Private,Urban,214,28.2,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,50,1,0,Yes,Self-employed,Rural,167,30.9,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,64,0,1,Yes,Private,Urban,192,37.5,smokes,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,75,1,0,Yes,Private,Urban,221,25.8,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,60,0,0,No,Private,Urban,89,37.8,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,71,0,0,Yes,Govt_job,Rural,194,22.4,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,52,1,0,Yes,Self-employed,Urban,233,48.9,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,0,0,Yes,Self-employed,Urban,229,26.6,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,71,0,0,Yes,Private,Urban,103,27.2,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,80,0,0,Yes,Self-employed,Rural,104,23.5,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,65,0,0,Yes,Private,Rural,101,28.2,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,69,0,1,Yes,Self-employed,Urban,195,28.3,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,57,1,0,Yes,Private,Urban,212,44.2,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,1,0,Yes,Self-employed,Urban,197,22.2,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,1,Yes,Self-employed,Urban,253,30.5,formerly smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,48,0,0,No,Govt_job,Urban,84,29.7,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,82,1,1,No,Private,Rural,84,26.5,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,74,0,0,Yes,Private,Rural,220,33.7,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,1,0,Yes,Private,Rural,75,23.1,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,49,0,0,Yes,Private,Urban,61,29.9,never smoked,No,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,78,0,0,Yes,Private,Rural,78,23.9,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,54,0,0,Yes,Private,Urban,71,28.5,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,82,0,1,Yes,Private,Urban,145,26.4,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,60,1,0,Yes,Govt_job,Urban,213,20.2,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,1,0,Yes,Private,Rural,244,33.6,never smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,58,0,0,Yes,Private,Urban,107,38.6,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,81,0,0,Yes,Self-employed,Urban,99,33.7,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,39,1,0,Yes,Private,Rural,58,39.2,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,0,1,Yes,Private,Rural,127,27.7,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,1,0,Yes,Self-employed,Urban,124,31.4,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,63,0,1,Yes,Private,Rural,197,36.5,formerly smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,82,0,0,Yes,Private,Rural,59,33.2,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,73,1,0,Yes,Self-employed,Urban,195,32.8,never smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,54,1,0,Yes,Govt_job,Urban,181,27.7,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,56,0,0,Yes,Private,Urban,185,40.4,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,1,0,Yes,Private,Rural,75,22.2,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,67,1,0,Yes,Self-employed,Rural,62,25.3,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,45,0,0,Yes,Private,Rural,94,30.2,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,78,1,0,No,Private,Urban,113,24.0,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,0,0,Yes,Private,Urban,222,47.5,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,59,0,0,Yes,Private,Urban,86,30.0,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,80,1,0,Yes,Self-employed,Rural,73,28.9,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,67,1,0,Yes,Private,Rural,179,28.1,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,66,1,0,Yes,Govt_job,Rural,117,31.1,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,63,0,0,Yes,Private,Rural,229,27.4,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,52,0,0,Yes,Private,Rural,97,26.4,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Female,80,0,1,Yes,Self-employed,Rural,67,21.7,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,1,0,Yes,Private,Urban,240,27.0,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,0,0,Yes,Private,Urban,111,24.1,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,79,0,0,No,Private,Rural,89,22.9,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,68,1,0,No,Self-employed,Urban,80,29.7,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,54,0,0,Yes,Private,Rural,97,29.1,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,61,0,1,Yes,Private,Rural,112,27.3,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,0,1,Yes,Private,Rural,59,32.3,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,47,0,0,Yes,Private,Urban,87,41.1,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,79,0,1,Yes,Private,Urban,227,29.8,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,0,Yes,Private,Urban,73,26.3,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,57,0,0,No,Self-employed,Urban,68,37.5,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,45,0,0,Yes,Private,Rural,64,29.4,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,78,0,0,Yes,Private,Rural,236,32.3,never smoked,No,24,Yes,Moderate,TIA,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,0,0,Yes,Self-employed,Rural,76,24.4,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,58,0,1,Yes,Private,Rural,241,31.4,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,57,1,0,Yes,Govt_job,Urban,79,27.7,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,69,0,0,Yes,Govt_job,Urban,83,28.0,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,77,0,0,Yes,Govt_job,Rural,190,31.4,never smoked,No,24,Yes,Moderate,TIA,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,0,0,Yes,Private,Rural,232,34.6,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,50,1,0,Yes,Private,Rural,73,30.3,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,54,0,0,Yes,Self-employed,Rural,192,40.4,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,0,0,Yes,Private,Rural,93,24.2,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,53,0,0,Yes,Govt_job,Urban,64,41.5,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,79,0,1,Yes,Private,Rural,130,22.6,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,1,Yes,Private,Urban,69,24.2,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,45,0,0,Yes,Private,Rural,224,56.6,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,71,1,1,No,Govt_job,Rural,217,30.9,never smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,61,1,0,Yes,Self-employed,Rural,76,27.3,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,74,0,0,Yes,Private,Urban,73,31.3,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,38,0,0,No,Self-employed,Urban,82,24.0,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,77,0,0,Yes,Private,Urban,105,31.0,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,58,0,0,Yes,Private,Rural,60,28.0,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,80,0,0,Yes,Private,Rural,260,31.7,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,56,1,0,Yes,Private,Rural,249,35.8,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,0,0,Yes,Govt_job,Urban,131,28.4,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,82,0,0,Yes,Govt_job,Urban,201,29.0,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,1,0,Yes,Private,Rural,190,36.5,never smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,78,1,0,No,Private,Urban,131,20.1,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,69,1,0,No,Private,Rural,183,36.5,never smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,68,1,0,Yes,Self-employed,Rural,206,26.7,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,71,0,0,Yes,Govt_job,Urban,263,38.7,never smoked,No,24,Yes,Moderate,TIA,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,0,0,Yes,Private,Urban,140,29.9,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,76,1,0,Yes,Self-employed,Rural,194,27.0,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,82,0,1,Yes,Govt_job,Rural,104,25.0,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,59,0,0,Yes,Private,Rural,116,23.8,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,74,1,0,Yes,Private,Urban,70,21.8,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,1,1,No,Self-employed,Urban,72,36.8,never smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,72,1,0,Yes,Private,Urban,222,30.0,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,66,0,0,Yes,Private,Urban,151,27.5,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,78,0,0,Yes,Private,Urban,67,24.6,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Female,57,1,0,Yes,Govt_job,Rural,67,32.9,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,0,1,Yes,Private,Rural,239,26.1,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,68,0,1,Yes,Private,Urban,224,31.9,formerly smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,80,0,0,Yes,Self-employed,Urban,77,34.1,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,68,0,0,Yes,Self-employed,Urban,78,27.5,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,55,0,0,Yes,Self-employed,Rural,93,25.6,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,77,0,1,Yes,Private,Rural,232,36.9,never smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,50,0,0,Yes,Private,Rural,102,31.4,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,57,0,0,Yes,Private,Urban,222,37.3,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,71,0,0,Yes,Self-employed,Urban,196,34.1,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,1,0,Yes,Self-employed,Rural,74,25.0,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,78,1,0,No,Private,Urban,204,45.7,never smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,70,1,0,Yes,Self-employed,Urban,89,34.2,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,0,Yes,Self-employed,Urban,133,23.6,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,79,1,0,No,Govt_job,Urban,98,22.3,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,0,Yes,Self-employed,Rural,92,31.4,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,60,0,0,Yes,Private,Urban,97,26.4,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,80,1,0,Yes,Self-employed,Rural,91,32.9,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,72,1,0,Yes,Self-employed,Rural,185,37.1,never smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,80,0,0,Yes,Private,Urban,64,45.0,never smoked,No,24,Yes,Moderate,TIA,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,1,0,Yes,Self-employed,Rural,56,25.5,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,46,0,0,Yes,Private,Urban,78,30.8,never smoked,No,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,59,0,0,Yes,Private,Urban,111,32.0,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,32,0,0,Yes,Private,Rural,76,29.9,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,61,1,1,Yes,Private,Urban,112,37.4,smokes,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,63,0,0,Yes,Private,Rural,137,31.7,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,63,0,1,Yes,Self-employed,Urban,117,34.5,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,1,1,Yes,Govt_job,Urban,216,27.9,formerly smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,82,0,0,Yes,Private,Rural,87,29.5,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,65,0,0,Yes,Private,Urban,206,46.0,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,51,1,0,Yes,Private,Urban,112,42.5,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,59,0,0,Yes,Self-employed,Rural,118,35.5,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,68,1,1,Yes,Private,Rural,272,31.1,smokes,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,72,0,0,Yes,Private,Rural,98,26.9,smokes,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,59,0,0,Yes,Private,Urban,201,35.8,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,70,1,0,Yes,Private,Rural,243,45.5,formerly smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,74,0,0,Yes,Self-employed,Urban,75,26.6,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,80,1,1,Yes,Private,Urban,175,31.5,formerly smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,78,0,0,Yes,Self-employed,Rural,109,30.8,never smoked,No,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,54,0,0,Yes,Govt_job,Rural,88,31.1,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,78,0,0,Yes,Private,Urban,107,33.0,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,0,No,Self-employed,Urban,90,26.9,never smoked,No,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,39,0,0,Yes,Private,Urban,83,26.3,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,51,0,0,Yes,Govt_job,Rural,103,27.3,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,63,0,0,Yes,Private,Urban,209,30.7,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,48,0,0,Yes,Private,Urban,74,20.5,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,79,0,1,No,Private,Urban,205,31.0,smokes,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,78,0,0,Yes,Self-employed,Urban,116,27.1,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,55,1,1,Yes,Private,Urban,210,40.0,smokes,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,73,0,1,Yes,Govt_job,Rural,220,28.6,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,1,1,Yes,Private,Urban,251,28.1,smokes,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,79,0,0,Yes,Private,Rural,73,28.4,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,63,0,0,Yes,Govt_job,Rural,205,42.2,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,0,No,Govt_job,Urban,70,25.8,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,49,0,0,No,Private,Rural,105,31.9,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,81,0,0,Yes,Private,Rural,184,27.5,never smoked,No,24,Yes,Moderate,TIA,Neurologist,Clopidogrel + Blood Thinners,14
+Female,39,0,0,Yes,Self-employed,Urban,98,29.6,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,80,1,0,No,Private,Urban,66,35.4,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,0,Yes,Self-employed,Rural,82,16.9,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,79,0,0,Yes,Private,Urban,98,21.5,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,77,1,0,Yes,Self-employed,Urban,200,28.0,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,77,0,0,Yes,Self-employed,Rural,162,32.6,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,51,1,0,Yes,Private,Urban,88,28.4,never smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,60,0,1,Yes,Private,Urban,92,35.9,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,66,0,0,Yes,Private,Rural,76,21.2,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,57,0,0,Yes,Private,Rural,197,34.5,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,68,0,0,Yes,Private,Rural,234,42.4,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,68,1,1,Yes,Private,Urban,248,40.5,formerly smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,75,0,0,Yes,Self-employed,Rural,79,29.3,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,78,1,0,Yes,Self-employed,Rural,50,26.641767174441696,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,54,0,0,Yes,Private,Rural,191,36.140381723727735,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,67,0,1,Yes,Private,Urban,186,38.97084388770423,smokes,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,78,0,0,Yes,Private,Urban,130,29.080296297970943,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,51,0,0,Yes,Govt_job,Urban,68,40.502687795860105,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,83,0,0,No,Govt_job,Urban,64,24.77326659141729,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,76,0,1,Yes,Private,Rural,129,22.42704498815834,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,49,0,0,Yes,Private,Rural,223,56.44688653977165,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,44,0,0,No,Govt_job,Urban,92,29.687457705063714,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,85,0,1,Yes,Govt_job,Rural,100,26.653406398751056,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,1,Yes,Self-employed,Rural,61,20.244612106603167,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,1,0,Yes,Self-employed,Rural,76,24.721976646396698,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,66,0,0,Yes,Govt_job,Urban,82,26.205208413444847,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,67,0,1,Yes,Private,Rural,204,34.9160210076832,formerly smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,56,1,0,Yes,Private,Urban,208,42.571098558378026,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,44,0,0,Yes,Private,Urban,56,28.685455492389664,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,67,0,0,Yes,Private,Urban,159,25.743835989091814,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,47,1,0,Yes,Self-employed,Urban,235,47.35917519688349,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,79,1,0,No,Private,Urban,121,25.77679082506553,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,50,0,0,No,Private,Rural,104,31.22419463960193,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,68,0,0,Yes,Self-employed,Urban,187,32.5035859110428,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,60,0,0,Yes,Private,Urban,109,32.78430728333675,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,83,1,0,Yes,Private,Rural,86,29.222774707260243,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,1,1,Yes,Private,Urban,252,27.917223611712483,smokes,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,52,0,0,Yes,Private,Urban,222,36.08627059906669,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,50,1,1,Yes,Private,Urban,210,41.48970887434093,smokes,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,64,0,0,Yes,Private,Rural,110,27.599941310167484,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,74,1,0,Yes,Private,Rural,189,35.401356842634314,never smoked,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,65,0,0,Yes,Govt_job,Urban,83,26.266486322899382,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,64,0,1,Yes,Private,Urban,226,36.49153329995733,formerly smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,46,0,0,Yes,Private,Rural,99,29.093032463388063,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,51,1,0,Yes,Private,Urban,94,30.207631868042625,never smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,66,0,1,Yes,Private,Urban,223,37.08104688615439,formerly smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,66,0,1,Yes,Self-employed,Urban,188,27.911812449562262,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,0,0,Yes,Self-employed,Urban,189,34.47951400938702,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,0,0,Yes,Private,Urban,94,19.74759333791388,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,75,0,0,Yes,Private,Rural,69,28.85136123824217,never smoked,No,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,80,0,0,Yes,Self-employed,Urban,112,28.0201477612685,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,42,0,0,Yes,Private,Urban,84,29.80199345041636,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,73,1,0,No,Private,Urban,124,18.356655468917573,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,68,1,0,Yes,Self-employed,Rural,56,23.421125219493547,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,67,1,0,Yes,Govt_job,Rural,122,30.920742647571696,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,63,0,0,Yes,Self-employed,Urban,79,27.169409721562,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,73,1,0,Yes,Self-employed,Urban,209,26.96545461154671,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,0,0,Yes,Private,Rural,108,27.543402686912188,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,81,0,1,Yes,Self-employed,Rural,68,22.349524534948472,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,55,1,0,Yes,Govt_job,Rural,67,34.44110282610293,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,0,0,Yes,Govt_job,Rural,184,33.22712769684248,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,51,0,0,Yes,Private,Urban,89,42.53622450737875,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,77,0,0,Yes,Private,Urban,148,28.609492129100303,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,64,0,1,Yes,Private,Rural,109,26.2430765807235,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,71,0,0,Yes,Self-employed,Rural,72,30.646779509741595,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,75,0,1,Yes,Self-employed,Rural,64,23.15086816258485,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,66,0,0,No,Private,Urban,94,21.26961391414717,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,65,0,0,Yes,Private,Urban,200,30.5489346492417,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,1,0,No,Self-employed,Urban,80,30.363777621829183,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,50,0,0,Yes,Self-employed,Rural,193,39.04088624591521,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,63,0,1,Yes,Govt_job,Rural,111,37.4329627965576,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,51,0,0,Yes,Private,Urban,69,21.05443459622296,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Male,56,0,0,Yes,Private,Urban,64,28.0285565090178,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,51,1,0,Yes,Govt_job,Urban,173,27.190529288222884,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,0,0,Yes,Private,Rural,74,24.40434540678105,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,74,0,0,Yes,Private,Rural,83,25.6333094059455,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,79,0,0,Yes,Self-employed,Rural,98,30.43337169794557,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,68,0,1,Yes,Private,Rural,245,26.32060344984449,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,68,0,0,Yes,Self-employed,Rural,85,25.43580038274438,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,54,0,0,Yes,Private,Urban,196,35.444333901001926,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,58,0,0,Yes,Private,Urban,80,30.32435124501478,never smoked,No,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,76,0,0,Yes,Private,Urban,180,29.25109018752913,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,58,0,0,Yes,Private,Urban,188,42.1825004406633,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,0,1,Yes,Private,Rural,223,37.54005153410054,never smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,59,0,1,Yes,Private,Rural,115,28.721156919210813,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,77,1,0,Yes,Self-employed,Rural,60,24.23626699157404,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,1,1,Yes,Private,Urban,247,40.02590292030319,formerly smoked,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,68,1,0,Yes,Self-employed,Rural,68,26.69951190678132,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,0,0,No,Private,Urban,89,22.527124200416395,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Male,81,0,1,Yes,Private,Rural,101,31.59336753512612,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,84,1,1,Yes,Govt_job,Urban,224,29.83709611774592,formerly smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,78,0,0,No,Self-employed,Urban,84,26.67665661466981,never smoked,No,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,76,1,1,Yes,Private,Rural,66,27.474783308652512,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,1,Yes,Self-employed,Urban,248,30.66606669576307,formerly smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,67,1,0,Yes,Private,Urban,224,31.933122860186185,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,46,1,0,Yes,Private,Urban,111,43.4841940361508,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,66,1,0,Yes,Private,Rural,184,26.4130220739932,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,46,0,0,Yes,Private,Rural,221,55.59465818895645,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,54,1,0,Yes,Self-employed,Urban,225,47.13898927399915,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,1,0,Yes,Private,Rural,72,28.213538248529296,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,1,Yes,Private,Urban,66,25.08487285618338,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,1,0,No,Private,Urban,196,44.96879708982588,never smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,60,0,0,Yes,Private,Rural,57,26.19139212821804,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,63,1,0,Yes,Govt_job,Rural,126,31.30399222582524,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,1,0,Yes,Self-employed,Rural,69,26.067166008203248,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,61,0,1,Yes,Private,Rural,231,33.28916750265671,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,60,0,1,Yes,Private,Rural,122,29.12287483921891,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,75,1,1,No,Govt_job,Rural,222,30.70083955472687,never smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,58,0,0,Yes,Self-employed,Rural,90,24.51372245824253,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,46,0,0,Yes,Private,Rural,104,31.43355151424816,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,67,0,0,Yes,Private,Rural,90,25.41153407041924,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,81,1,0,Yes,Self-employed,Rural,97,32.324033551884376,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,60,1,1,Yes,Private,Urban,119,36.19781856155857,smokes,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,79,0,1,Yes,Govt_job,Rural,102,24.67723824415782,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,83,0,1,Yes,Private,Urban,62,24.515909039971383,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,55,0,0,Yes,Private,Urban,116,32.293399611901584,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,61,1,0,Yes,Govt_job,Urban,215,19.37751036864148,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,85,1,0,Yes,Private,Rural,81,30.10979800964701,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,0,Yes,Private,Urban,69,44.31945023209403,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,38,1,0,Yes,Private,Rural,57,38.05862026340218,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,62,0,0,Yes,Private,Urban,203,35.6991808136966,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,0,Yes,Self-employed,Rural,153,31.514447947873368,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,0,0,Yes,Private,Rural,80,25.275953608115543,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,76,0,0,Yes,Private,Rural,70,22.77749259178828,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,64,1,0,Yes,Self-employed,Rural,77,28.061459774975432,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,75,0,1,Yes,Private,Urban,69,23.04469076393286,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,79,0,0,Yes,Self-employed,Urban,94,31.976445667829097,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,1,0,Yes,Private,Urban,231,31.341757559609,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,73,0,0,Yes,Private,Rural,214,34.85504932553671,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,0,0,Yes,Self-employed,Urban,84,33.87342820452611,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,58,0,0,Yes,Private,Rural,102,27.588123436479435,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,86,1,1,No,Private,Rural,84,26.386485470808694,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,84,1,0,No,Private,Urban,66,36.22874482948711,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,0,0,Yes,Private,Rural,74,22.38684924756045,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,76,0,0,Yes,Private,Urban,81,31.434169446250284,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,54,1,0,Yes,Private,Urban,104,41.68859766547164,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,66,0,0,Yes,Private,Rural,224,42.002417241406405,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,65,0,1,Yes,Self-employed,Urban,196,28.23374719449585,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,66,0,1,Yes,Private,Urban,221,31.83306842590549,formerly smoked,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,77,1,0,Yes,Self-employed,Rural,184,22.48040676791529,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,54,0,0,Yes,Self-employed,Rural,187,39.42865842846162,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,0,0,Yes,Private,Urban,77,26.268415124431147,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,74,1,0,Yes,Self-employed,Urban,121,32.155896927263235,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,71,1,0,Yes,Private,Rural,240,44.85907853917995,formerly smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,78,0,0,Yes,Private,Rural,79,27.91317038384308,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,40,0,0,Yes,Private,Rural,84,28.22803271369519,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,59,0,0,No,Private,Urban,83,36.13125687820325,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,72,0,0,Yes,Govt_job,Urban,259,39.0102631935883,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,1,0,Yes,Self-employed,Rural,182,24.002307993955625,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,54,1,0,Yes,Self-employed,Urban,243,46.91623194995928,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,1,0,Yes,Private,Rural,72,31.629584633698443,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,0,0,Yes,Self-employed,Urban,223,24.866798177903178,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,0,0,Yes,Private,Rural,243,30.305873181857343,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,60,0,0,Yes,Private,Rural,231,28.78938754242921,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,61,0,0,Yes,Self-employed,Rural,109,35.6256643329373,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,62,0,1,Yes,Govt_job,Rural,121,37.34011408811273,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,46,0,0,Yes,Private,Urban,74,32.42367082329245,never smoked,No,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,70,0,0,Yes,Self-employed,Urban,188,32.48515812518104,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,0,Yes,Private,Rural,227,32.388408797908006,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,79,0,0,No,Self-employed,Urban,90,26.576560622536547,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,76,1,0,Yes,Private,Urban,227,24.81150663170804,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,1,0,Yes,Self-employed,Rural,101,33.24870535718579,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,49,0,0,Yes,Govt_job,Rural,97,27.648571130094822,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,81,0,1,Yes,Private,Urban,227,29.24031469503985,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,0,0,Yes,Private,Rural,98,26.528661185275222,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,80,0,0,Yes,Private,Urban,70,24.31222754639736,never smoked,No,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,74,0,0,Yes,Private,Urban,94,20.847659662138224,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,62,0,1,Yes,Private,Urban,85,35.48527756258858,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,75,1,0,Yes,Self-employed,Rural,196,28.600186092036846,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,0,0,Yes,Govt_job,Rural,191,22.77907328216356,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,86,1,1,Yes,Govt_job,Urban,223,29.077718937465924,formerly smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,68,1,0,Yes,Private,Rural,243,46.04897733276708,formerly smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,42,0,0,Yes,Private,Rural,98,30.2308440553676,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,68,0,0,Yes,Self-employed,Urban,74,34.24723171849742,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,0,Yes,Self-employed,Urban,87,22.762144084053165,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,72,0,1,Yes,Private,Rural,61,31.01658913545704,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,58,0,0,Yes,Private,Urban,104,39.239145488060615,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,67,1,0,Yes,Private,Rural,170,26.973063809487424,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,64,1,1,Yes,Private,Urban,240,39.550101765426085,formerly smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,83,0,0,Yes,Self-employed,Rural,99,22.59821128701698,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,36,1,0,Yes,Private,Rural,65,37.54404854912081,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,38,0,0,Yes,Self-employed,Urban,94,28.338183651703304,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,68,1,0,Yes,Private,Rural,66,22.412688274436555,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,0,0,Yes,Private,Urban,103,32.37835345532353,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,46,1,0,Yes,Private,Rural,82,31.495726488016587,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,67,0,0,Yes,Govt_job,Rural,207,42.37357296653032,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,0,0,Yes,Self-employed,Urban,189,32.562039813425514,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,59,0,1,Yes,Private,Rural,249,33.01534865404738,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,53,1,0,Yes,Private,Urban,220,45.08119722195472,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,63,1,0,Yes,Self-employed,Rural,67,25.265771803321684,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,1,0,No,Private,Urban,122,20.296952689927245,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,0,Yes,Private,Urban,74,25.699518002027137,never smoked,No,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,55,1,1,Yes,Private,Urban,207,41.95010650909487,smokes,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,54,0,0,Yes,Self-employed,Rural,84,23.960394504836152,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Male,60,1,0,Yes,Govt_job,Urban,207,19.730990716611355,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,58,0,0,Yes,Private,Rural,52,27.691479984397013,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,60,0,0,Yes,Private,Urban,78,28.164907627003075,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,69,1,0,Yes,Self-employed,Urban,198,31.07497176965744,never smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,85,1,0,Yes,Self-employed,Rural,67,24.02343092410463,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,58,0,0,Yes,Private,Urban,230,35.5452547253298,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,0,0,Yes,Private,Rural,108,29.78286249217146,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,83,0,0,Yes,Self-employed,Urban,228,26.884052111092483,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,79,1,0,Yes,Private,Rural,246,33.6077847008187,never smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,76,1,1,Yes,Private,Urban,241,28.238849872949263,smokes,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,68,1,0,Yes,Private,Rural,247,44.70207761795668,formerly smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,60,0,0,Yes,Private,Urban,107,27.860601005516937,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,80,0,1,Yes,Self-employed,Rural,72,20.37662662942264,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,69,1,1,Yes,Private,Rural,61,28.87256737462835,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,79,0,1,Yes,Private,Urban,153,25.971070500940893,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,60,0,0,No,Self-employed,Urban,75,39.13727390504395,never smoked,No,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,65,0,0,Yes,Private,Urban,205,32.54847977445778,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,58,0,0,Yes,Private,Urban,103,27.251133790601525,smokes,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,51,1,0,Yes,Self-employed,Urban,235,49.66320633904886,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,51,1,0,Yes,Self-employed,Rural,171,30.86273176478369,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,65,1,1,Yes,Private,Urban,121,36.61562704036436,smokes,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,67,1,0,Yes,Self-employed,Rural,212,28.687035179467035,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,0,Yes,Self-employed,Rural,85,33.30290661988558,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,1,0,Yes,Self-employed,Rural,198,25.024044891374658,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,1,1,Yes,Govt_job,Urban,224,29.257616747871165,formerly smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,79,0,1,Yes,Govt_job,Rural,110,24.978324975098783,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,0,Yes,Self-employed,Urban,75,33.08151057577138,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,61,0,0,Yes,Private,Urban,117,36.663336470945744,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,67,1,1,No,Govt_job,Rural,224,31.58754242854749,never smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,60,0,1,Yes,Govt_job,Rural,123,34.862676542954176,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,0,0,Yes,Self-employed,Urban,201,33.66114557831194,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,56,1,0,Yes,Govt_job,Urban,211,19.962994216392342,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,84,0,0,Yes,Private,Rural,258,32.701475256946495,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,0,0,Yes,Self-employed,Urban,134,24.57805913992069,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,74,0,0,Yes,Private,Rural,215,32.9222627181754,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,0,Yes,Private,Rural,79,25.418529070081348,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,51,1,0,Yes,Self-employed,Rural,163,30.699543225746936,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,0,0,Yes,Self-employed,Rural,74,27.566073600600213,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,68,1,0,Yes,Govt_job,Rural,120,31.706808987663624,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,1,0,No,Private,Urban,129,20.34083107479419,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,75,1,1,Yes,Private,Urban,172,30.711842224291694,formerly smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,54,0,0,Yes,Private,Rural,197,32.88892487609699,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,43,0,0,Yes,Private,Rural,216,57.64280601215081,never smoked,No,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,51,0,0,No,Govt_job,Urban,80,30.098457040345373,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,80,1,0,Yes,Self-employed,Rural,85,31.178169452710083,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,42,0,0,Yes,Self-employed,Urban,92,29.4921248404456,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,74,1,0,Yes,Self-employed,Rural,185,36.40150085212319,never smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,70,0,0,Yes,Private,Rural,239,35.254961937445216,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,53,0,0,Yes,Private,Rural,103,32.23634451065128,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,67,0,0,Yes,Private,Urban,225,46.28580921875562,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,0,Yes,Private,Rural,263,32.64979483345918,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,79,0,0,Yes,Self-employed,Rural,169,30.891515696635103,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,65,0,0,Yes,Private,Rural,242,41.97945703099997,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,0,0,Yes,Private,Rural,241,33.31183088386519,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,0,Yes,Govt_job,Urban,210,27.64949828596523,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,69,0,1,Yes,Govt_job,Rural,223,28.12215399053664,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,0,Yes,Private,Rural,79,22.257350698023888,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,74,0,0,Yes,Self-employed,Urban,74,33.72351204054118,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,66,1,1,Yes,Private,Urban,245,39.96971114134372,formerly smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,74,0,0,Yes,Private,Rural,106,25.94601326039477,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,74,1,0,Yes,Private,Urban,228,31.277628177289515,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,0,0,Yes,Self-employed,Urban,92,22.139256751413544,never smoked,No,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,82,1,1,No,Private,Rural,89,25.303539851240995,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,60,0,0,Yes,Private,Urban,212,35.52387684378498,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,1,0,Yes,Self-employed,Urban,196,28.471236993334816,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,0,Yes,Private,Rural,86,23.818440165103016,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Female,66,1,1,Yes,Private,Urban,256,38.63451823867862,formerly smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,72,0,0,Yes,Govt_job,Urban,79,27.42134294353758,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,66,0,0,Yes,Private,Urban,212,29.01151238159593,never smoked,No,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,1,0,Yes,Private,Urban,219,31.79863236013184,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,0,0,Yes,Private,Urban,220,47.38938004128313,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,1,0,Yes,Private,Urban,222,29.324893005565706,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,0,0,Yes,Private,Rural,224,33.06256055839164,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,1,0,Yes,Private,Rural,177,28.69063445609064,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,75,0,1,Yes,Self-employed,Urban,255,29.122295646794186,formerly smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,69,1,0,Yes,Private,Rural,242,43.61937824409481,formerly smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,45,0,0,Yes,Private,Rural,228,56.91464511880289,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,69,1,0,Yes,Self-employed,Rural,193,38.1275102941475,never smoked,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,80,1,0,No,Govt_job,Urban,102,23.24873981799412,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,74,1,0,Yes,Private,Urban,221,26.07127145047149,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,75,0,0,Yes,Self-employed,Urban,108,28.7099742354482,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,67,0,0,Yes,Govt_job,Rural,187,23.75951785478753,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,52,0,0,Yes,Private,Rural,103,31.917020756825185,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,80,0,0,Yes,Private,Urban,76,27.473313472188483,never smoked,No,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,61,0,0,Yes,Private,Rural,101,26.81509273997693,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,51,0,0,Yes,Private,Rural,98,30.92003177428007,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,58,0,0,Yes,Private,Urban,211,30.232156120309163,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,70,0,1,Yes,Private,Urban,229,34.76125963613252,formerly smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,59,0,1,Yes,Self-employed,Urban,116,35.60874222013869,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,84,0,0,No,Govt_job,Urban,78,26.657808674643835,smokes,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,60,0,0,Yes,Private,Rural,188,35.8840732364153,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,0,0,Yes,Private,Urban,104,24.24242917443417,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,59,0,0,Yes,Private,Urban,182,40.928105125749305,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,1,Yes,Private,Rural,124,22.142195131360584,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,58,1,0,Yes,Govt_job,Rural,67,34.4881707551719,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,61,0,0,Yes,Private,Urban,208,34.6232351366248,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,58,0,1,Yes,Private,Urban,100,35.26226486184682,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,0,0,Yes,Self-employed,Rural,164,31.95158999948246,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,78,1,0,Yes,Self-employed,Urban,204,29.607805191557564,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,1,0,Yes,Self-employed,Rural,95,34.01271678812674,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,47,0,0,Yes,Govt_job,Rural,104,26.02320595630912,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,75,0,1,Yes,Private,Rural,134,21.77806312120605,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,1,0,Yes,Private,Rural,81,21.320106901286508,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,1,0,Yes,Self-employed,Urban,125,30.49694336613196,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,86,1,1,No,Private,Rural,77,27.718499282813603,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,0,0,Yes,Private,Urban,120,23.815895090562183,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,74,0,0,Yes,Govt_job,Rural,186,21.793061343240648,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,71,1,1,Yes,Private,Rural,70,27.735405988891728,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,1,0,No,Private,Urban,122,19.134955536232702,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,1,0,Yes,Self-employed,Urban,93,35.81514602572952,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,52,1,1,Yes,Private,Urban,212,40.194051660196095,smokes,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,81,0,1,Yes,Govt_job,Rural,109,24.046623690513755,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,1,0,Yes,Self-employed,Rural,178,24.63345285417628,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,0,1,Yes,Self-employed,Rural,59,20.73606863813021,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,84,1,1,Yes,Govt_job,Urban,210,28.821725458407062,formerly smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,59,0,0,Yes,Private,Urban,221,36.17214720712486,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,59,0,0,Yes,Private,Urban,99,26.254862403501782,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,83,0,1,Yes,Private,Rural,129,25.754493854882696,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,66,0,0,Yes,Private,Rural,239,44.16989342002771,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,59,1,0,Yes,Govt_job,Rural,59,34.538748946946754,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,1,1,Yes,Private,Urban,179,29.77598822968334,formerly smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,75,0,0,Yes,Self-employed,Urban,141,22.95755011366113,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,79,0,0,Yes,Private,Rural,78,24.046505848276936,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,58,0,0,Yes,Govt_job,Rural,79,33.08246734326595,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,68,1,0,Yes,Self-employed,Rural,197,28.005388333827582,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,54,1,0,Yes,Private,Urban,207,45.640454825323225,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,48,1,0,Yes,Self-employed,Urban,225,50.43926303395136,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,1,Yes,Self-employed,Urban,262,32.131196441806054,formerly smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,83,0,0,Yes,Self-employed,Urban,70,35.55232688190858,never smoked,No,24,Yes,Moderate,TIA,Neurologist,Clopidogrel + Blood Thinners,14
+Male,79,0,0,No,Self-employed,Urban,84,25.897631350666494,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,75,0,0,Yes,Self-employed,Urban,84,27.801684783406603,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,61,1,0,Yes,Private,Urban,207,43.48179599410499,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,0,1,Yes,Private,Urban,230,29.32270938821234,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,0,0,Yes,Self-employed,Rural,80,32.33040479482009,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,64,1,0,Yes,Self-employed,Rural,75,28.51581606140672,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,0,Yes,Self-employed,Rural,93,32.30119058925174,never smoked,No,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,75,1,0,Yes,Private,Urban,215,27.114331590668897,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,1,0,No,Private,Urban,68,37.30905228323847,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,0,Yes,Govt_job,Urban,208,29.41797197504528,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,0,1,Yes,Private,Urban,233,30.32495778771888,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,78,0,0,Yes,Private,Urban,63,44.04209344632299,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,58,0,0,Yes,Govt_job,Rural,93,32.64506656018611,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,78,0,0,Yes,Self-employed,Rural,96,30.27519370869377,never smoked,No,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,56,0,0,Yes,Govt_job,Urban,55,42.13009493299028,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,84,0,0,No,Govt_job,Urban,79,26.85162732859895,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,79,0,1,Yes,Private,Urban,234,30.267179873723645,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,36,0,0,Yes,Private,Urban,77,27.913942489045603,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,53,0,0,Yes,Private,Urban,181,41.85522393522304,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,51,1,1,Yes,Private,Urban,213,40.41786809052528,smokes,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,57,0,0,Yes,Private,Rural,187,33.79069010773981,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,73,0,0,Yes,Self-employed,Urban,108,27.92580326205076,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,50,0,0,Yes,Private,Urban,180,33.56177992697351,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,64,0,0,Yes,Self-employed,Urban,80,28.42169297460007,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,80,0,1,No,Private,Urban,196,31.405048449983063,smokes,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,58,1,0,Yes,Private,Rural,243,37.096865303319866,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,0,0,Yes,Private,Rural,64,33.3051975508288,never smoked,No,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,50,0,0,Yes,Private,Urban,97,39.883948161763485,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,63,1,0,No,Self-employed,Urban,84,27.887389936213552,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,46,0,0,Yes,Private,Rural,95,29.42750179312525,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,64,1,0,Yes,Govt_job,Rural,108,32.19744272673954,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,63,0,1,Yes,Private,Rural,190,37.99253497282407,formerly smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,82,0,1,Yes,Self-employed,Urban,243,29.35337651022656,formerly smoked,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,71,1,1,No,Govt_job,Rural,225,30.059445380143067,never smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,83,0,0,Yes,Private,Urban,190,27.05296054105743,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,0,Yes,Private,Urban,105,24.96799952943545,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,76,0,0,Yes,Private,Urban,80,27.999270464734145,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,68,1,0,Yes,Govt_job,Rural,112,29.76815855000461,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,53,1,0,Yes,Govt_job,Rural,72,33.906482222717585,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,78,1,1,No,Private,Rural,87,28.128715165038383,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,47,0,0,Yes,Private,Urban,169,34.13126773206783,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,56,0,0,Yes,Govt_job,Rural,95,30.63620347163525,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,51,0,0,Yes,Private,Urban,62,28.65575779153185,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,83,0,1,Yes,Private,Urban,228,31.081584982097027,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,55,1,0,Yes,Private,Urban,216,44.84667264313396,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,78,0,0,Yes,Private,Urban,69,23.733271790335465,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,72,0,0,Yes,Govt_job,Urban,266,37.72572390128622,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,50,0,0,Yes,Private,Rural,89,30.130303897610013,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,81,0,1,Yes,Self-employed,Rural,64,22.86532256071497,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,1,Yes,Self-employed,Rural,62,23.62185182827113,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,83,0,0,Yes,Private,Rural,78,29.200140241890168,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,47,0,0,Yes,Private,Urban,78,22.48369919563605,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,76,0,0,Yes,Private,Urban,104,24.067465650286223,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,83,0,0,Yes,Self-employed,Urban,219,28.31675017700345,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,73,0,0,No,Self-employed,Urban,91,25.67964554581198,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,56,1,1,Yes,Private,Urban,206,40.0525243013067,smokes,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,34,1,0,Yes,Private,Rural,55,39.90549218514818,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,60,0,0,Yes,Private,Urban,205,35.4312461074793,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,44,0,0,Yes,Private,Urban,56,30.45031577973425,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Female,81,0,0,Yes,Self-employed,Rural,84,16.5079490512014,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,80,0,1,Yes,Private,Rural,132,27.411909194504265,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,57,0,0,Yes,Private,Urban,87,28.31397234426899,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,73,0,0,Yes,Private,Urban,70,25.17573763136994,never smoked,No,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,74,1,0,Yes,Self-employed,Urban,205,32.5946321698251,never smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,65,0,0,Yes,Private,Urban,146,27.63216178729992,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,54,0,0,Yes,Private,Rural,61,28.555073102906327,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,53,0,0,Yes,Private,Rural,198,33.99031007902597,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,71,1,0,Yes,Private,Rural,68,22.623956612739693,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,49,0,0,Yes,Private,Urban,69,30.27848220075368,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,67,1,0,Yes,Private,Rural,79,24.73110916780476,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,82,0,0,Yes,Private,Rural,253,32.5965813626008,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,85,0,0,Yes,Self-employed,Urban,97,21.11285146989775,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Male,61,0,0,Yes,Private,Urban,194,35.55287090357015,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,58,0,0,Yes,Private,Rural,119,23.923799711601724,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,72,0,0,Yes,Self-employed,Urban,192,32.79256952615221,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,48,0,0,Yes,Private,Urban,80,41.85048891310915,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,56,0,0,Yes,Private,Rural,61,28.08902809507103,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,43,1,0,Yes,Private,Rural,60,40.36640658486983,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,1,0,Yes,Private,Rural,185,29.99623626530396,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,60,0,0,Yes,Private,Urban,105,25.30108192100698,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,82,0,0,Yes,Self-employed,Urban,99,20.37318659881968,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,44,0,0,Yes,Private,Urban,78,20.991933865695632,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,51,0,0,Yes,Private,Rural,104,27.87083977278066,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,68,0,0,Yes,Private,Rural,80,22.58433081438276,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,69,0,0,Yes,Private,Rural,240,41.09184423922679,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,84,0,0,Yes,Private,Rural,88,23.70661650899221,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,80,1,0,No,Private,Urban,205,47.68557550149156,never smoked,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,77,0,0,No,Self-employed,Urban,94,26.79988948704317,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Female,77,1,0,Yes,Private,Rural,183,38.29323990859869,never smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,73,0,0,Yes,Govt_job,Rural,189,22.539854464841792,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,72,1,0,Yes,Self-employed,Urban,199,31.83001849425757,never smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,78,0,0,Yes,Self-employed,Rural,95,31.82934352435071,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,1,0,Yes,Self-employed,Rural,97,31.38932214639809,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,77,0,0,Yes,Private,Urban,66,33.210058547382125,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,0,0,Yes,Private,Rural,233,33.10528370670514,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,69,1,0,Yes,Private,Rural,234,45.399431366705954,formerly smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,64,0,1,Yes,Private,Urban,188,37.15699774700027,smokes,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,51,0,0,Yes,Private,Urban,177,40.41747567925656,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,66,1,0,No,Self-employed,Urban,72,27.99397755017528,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,73,1,0,No,Private,Rural,180,37.89157330015191,never smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,84,0,0,Yes,Self-employed,Urban,80,35.94025559355956,never smoked,No,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,0,Yes,Private,Rural,229,35.82455100640863,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,55,0,0,Yes,Private,Urban,200,34.256674607379395,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,0,0,Yes,Self-employed,Urban,97,20.919409444689293,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,51,1,1,Yes,Private,Urban,213,39.8043093932527,smokes,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,60,0,1,Yes,Private,Urban,101,35.65043023928919,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,59,0,1,Yes,Private,Rural,112,27.59972599020809,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,1,Yes,Private,Urban,77,26.07450244654813,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,0,1,Yes,Private,Rural,125,28.819914539524472,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,0,1,Yes,Private,Rural,57,31.35187787783548,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,54,1,0,Yes,Private,Urban,215,42.49951713625229,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,1,Yes,Self-employed,Urban,243,30.967711603850177,formerly smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,53,1,0,Yes,Self-employed,Urban,239,47.18787794737577,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,50,0,0,Yes,Govt_job,Rural,91,29.926330833054035,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,59,0,1,Yes,Private,Rural,119,27.97049113582656,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,0,0,Yes,Private,Urban,114,24.195110882974028,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,79,0,0,Yes,Self-employed,Urban,134,25.203920256716827,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,68,0,1,Yes,Private,Rural,245,26.505269726495392,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,0,0,Yes,Private,Rural,59,32.364182053503484,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,63,1,0,Yes,Self-employed,Rural,52,23.74696334505356,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,33,0,0,No,Self-employed,Urban,87,22.087810538536733,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,68,0,0,No,Private,Urban,95,24.788611501794808,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,63,1,0,Yes,Govt_job,Rural,121,32.228678753297224,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,55,1,0,Yes,Self-employed,Urban,238,49.4129083934021,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,1,0,Yes,Private,Rural,181,36.16776217146912,never smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,68,0,0,Yes,Govt_job,Rural,202,21.73079393719664,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,65,1,1,Yes,Private,Urban,254,42.099884046171326,formerly smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,76,0,0,Yes,Private,Urban,101,34.34211474774322,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,52,0,0,Yes,Private,Rural,205,33.874578039692665,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,82,0,1,Yes,Private,Urban,74,24.008347739849142,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,78,1,0,Yes,Self-employed,Rural,176,22.478637299497755,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,56,0,1,Yes,Private,Rural,236,31.96220013138785,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,47,0,0,No,Private,Rural,110,29.99641108948296,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,79,1,0,Yes,Self-employed,Rural,75,29.955967433724773,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,45,0,0,Yes,Private,Rural,92,28.579026969439063,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,79,0,0,Yes,Govt_job,Rural,186,31.526806620133065,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,82,0,0,Yes,Govt_job,Urban,200,30.416462298684955,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,0,1,No,Private,Urban,196,31.646889418719184,smokes,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,77,0,0,Yes,Private,Rural,188,29.47089235390863,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,0,0,Yes,Self-employed,Rural,89,17.474233821265784,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,62,0,0,Yes,Private,Rural,79,20.637315959836325,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,66,0,1,Yes,Private,Rural,64,31.923358351184312,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,74,0,0,Yes,Private,Rural,213,35.319288548513434,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,53,1,0,Yes,Self-employed,Rural,160,29.347490036155897,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,77,0,0,No,Self-employed,Urban,95,26.137689694878016,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Female,63,0,1,Yes,Govt_job,Rural,119,37.829418619953984,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,1,No,Private,Urban,214,31.84202935251856,smokes,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,85,1,1,Yes,Govt_job,Urban,216,26.085396324670626,formerly smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,79,0,0,Yes,Private,Rural,239,30.71019610315591,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,61,1,0,Yes,Govt_job,Rural,60,31.3929700552168,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,64,0,1,Yes,Private,Urban,221,33.05763231674724,formerly smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,63,0,0,Yes,Private,Urban,88,29.722789977477067,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,67,0,0,Yes,Private,Urban,207,31.780809367421224,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,1,0,No,Govt_job,Urban,90,21.26606669062991,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,0,Yes,Private,Urban,96,31.759392531608853,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,57,0,0,Yes,Self-employed,Rural,190,42.318927931887686,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,59,0,0,Yes,Private,Urban,82,29.44408147772693,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,38,1,0,Yes,Private,Rural,50,38.109107621860375,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,44,0,0,Yes,Private,Urban,84,41.37126532726292,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,41,0,0,No,Self-employed,Urban,91,22.979102156157687,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,65,0,1,Yes,Self-employed,Urban,201,27.715926522549527,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,82,0,1,Yes,Govt_job,Rural,94,26.12942263171228,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,56,0,0,Yes,Private,Urban,94,27.304145758743672,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,64,1,0,Yes,Self-employed,Rural,81,26.46548354954038,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,64,1,0,Yes,Self-employed,Rural,206,24.818049113276565,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,56,0,0,Yes,Private,Rural,189,34.9978809985552,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,69,0,0,Yes,Private,Rural,70,20.64993295186814,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,77,0,0,Yes,Self-employed,Rural,155,33.07481688726058,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,77,0,1,Yes,Self-employed,Urban,247,30.07758108464095,formerly smoked,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,72,0,0,Yes,Private,Rural,230,41.15175743064609,never smoked,No,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,1,0,Yes,Private,Rural,236,31.82081504556473,never smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,77,0,0,No,Govt_job,Urban,61,24.482958426474347,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,49,1,0,Yes,Private,Urban,94,28.41909960278107,never smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,83,1,0,Yes,Private,Rural,85,23.06701577371398,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,1,Yes,Self-employed,Rural,75,22.68527070169424,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,51,1,0,Yes,Self-employed,Rural,159,30.621396817154924,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,1,0,Yes,Self-employed,Urban,202,23.288493717795937,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,42,0,0,Yes,Private,Rural,220,54.99347312962738,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,84,0,1,Yes,Private,Rural,113,32.771801096784,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,1,0,Yes,Self-employed,Rural,189,28.99344675831203,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,59,0,0,Yes,Private,Urban,100,36.73834999596965,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,76,0,0,Yes,Self-employed,Urban,71,34.23919088298198,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,72,1,0,Yes,Private,Rural,241,35.480882998108505,never smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,62,0,0,Yes,Private,Urban,95,29.639674386083264,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,56,0,0,Yes,Private,Rural,111,22.82225607574452,smokes,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,45,0,0,Yes,Private,Urban,165,35.58932247473655,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,0,0,Yes,Govt_job,Urban,261,38.18693977473378,never smoked,No,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,54,0,0,Yes,Private,Urban,226,38.55075050284341,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,0,0,Yes,Private,Urban,225,48.26658160958954,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,0,1,Yes,Private,Urban,222,26.60639361788551,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,47,0,0,Yes,Private,Rural,106,31.96047645516969,smokes,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,55,1,0,Yes,Self-employed,Urban,242,48.35916091312704,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,67,1,0,No,Private,Rural,176,38.2056554935433,never smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,79,1,0,Yes,Self-employed,Urban,121,29.79909638239644,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,85,0,0,No,Govt_job,Urban,67,24.48399975122048,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,77,1,0,Yes,Self-employed,Rural,99,33.274302772580015,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,79,0,0,Yes,Self-employed,Urban,112,25.59518664178587,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,57,0,1,Yes,Private,Rural,120,26.483719002784824,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,73,0,0,Yes,Self-employed,Rural,162,33.750875084899604,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,1,0,Yes,Private,Urban,224,29.18591433844677,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,0,0,Yes,Govt_job,Urban,271,39.0137434662387,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,30,0,0,Yes,Private,Rural,84,30.754917009953296,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,54,1,0,Yes,Govt_job,Rural,66,34.809427881961675,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,84,0,0,Yes,Self-employed,Urban,67,33.748035185945085,never smoked,No,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,0,1,Yes,Private,Rural,222,35.98286420851073,never smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,75,0,1,Yes,Private,Urban,231,29.078489989495864,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,1,0,Yes,Private,Rural,69,22.215921605520503,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,1,0,Yes,Private,Rural,71,21.1068989102842,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,71,1,0,Yes,Private,Rural,194,34.55914489343959,never smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,79,0,0,Yes,Private,Rural,181,25.936511807687044,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,66,0,0,Yes,Govt_job,Rural,202,43.58260000907759,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,68,1,1,Yes,Private,Rural,262,30.2476483547593,smokes,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,80,1,0,Yes,Self-employed,Rural,68,25.374100347797864,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,59,0,1,Yes,Private,Rural,118,26.04147110754111,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,53,0,0,Yes,Private,Urban,98,26.30805971705692,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,34,1,0,Yes,Private,Rural,50,40.915096356134576,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,55,1,0,Yes,Private,Urban,203,44.90975659474169,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,47,0,0,No,Private,Rural,112,32.03435331859941,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,78,0,0,No,Self-employed,Urban,99,27.86497439796129,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,46,0,0,Yes,Private,Rural,222,55.57347803835863,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,62,0,0,Yes,Private,Rural,144,31.994768940216737,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,1,0,Yes,Self-employed,Rural,99,31.806249742161555,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,48,0,0,Yes,Private,Urban,84,29.84550971404688,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,65,0,0,Yes,Private,Urban,204,29.19993311580838,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,79,0,0,Yes,Private,Rural,252,32.64508784056032,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,59,0,0,Yes,Private,Rural,134,31.038755978237795,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,45,0,0,Yes,Private,Rural,57,28.330051599037663,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,78,0,0,Yes,Private,Rural,233,33.154223572112144,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,0,Yes,Self-employed,Urban,102,34.96663921622658,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,0,0,Yes,Private,Rural,230,33.2673710509857,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,57,0,0,No,Private,Urban,99,37.89872799255832,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,80,0,1,Yes,Govt_job,Rural,110,24.753419858616887,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,0,1,Yes,Private,Rural,135,28.16442021858333,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,68,1,0,Yes,Govt_job,Rural,124,30.509002978482066,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,42,0,0,Yes,Self-employed,Urban,88,31.530199373103564,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,73,0,1,Yes,Self-employed,Urban,188,29.70760361643717,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,0,0,Yes,Self-employed,Rural,170,34.161201122034704,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,63,1,0,Yes,Self-employed,Rural,61,25.63521958711552,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,71,0,1,Yes,Govt_job,Rural,214,29.000840092498965,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,1,0,Yes,Private,Rural,234,34.805710509087426,never smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,66,0,1,Yes,Private,Urban,188,38.47582137135496,smokes,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,82,1,0,Yes,Private,Rural,69,23.85549350803525,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,53,0,0,Yes,Private,Rural,94,27.44685495246586,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Female,69,0,0,Yes,Private,Urban,221,47.23130583113254,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,57,0,0,Yes,Private,Rural,195,33.33698670709869,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,67,0,1,Yes,Private,Urban,223,37.03715789389581,formerly smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,52,1,0,Yes,Private,Urban,97,26.879572630220704,never smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,55,0,0,Yes,Govt_job,Rural,103,25.756185361931124,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,67,0,0,Yes,Private,Urban,142,26.28561209034132,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,63,0,0,Yes,Self-employed,Urban,83,27.50859912578529,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,78,0,1,No,Private,Urban,205,31.214072008051616,smokes,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,75,1,0,No,Private,Urban,201,45.04218865795541,never smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,72,0,0,Yes,Self-employed,Urban,73,25.593957101656287,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,58,1,1,Yes,Private,Urban,216,41.90997036471124,smokes,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,74,1,0,Yes,Private,Urban,225,31.918012092451782,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,63,0,0,Yes,Govt_job,Rural,199,43.53603395518595,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,0,Yes,Private,Rural,96,28.60018227604328,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,62,0,1,Yes,Private,Rural,117,28.37173786151316,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,72,0,0,Yes,Self-employed,Urban,70,25.9004501043694,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,84,1,1,Yes,Govt_job,Urban,222,26.484312404763408,formerly smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,78,1,1,Yes,Private,Urban,249,29.23215752080329,smokes,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,57,1,0,Yes,Govt_job,Urban,78,26.75571561952222,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,60,0,1,Yes,Govt_job,Rural,118,38.49343480809378,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,0,Yes,Govt_job,Urban,139,26.447882681450498,never smoked,No,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,63,0,1,Yes,Govt_job,Rural,130,35.86329337839775,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,46,0,0,Yes,Private,Rural,92,32.42535572153166,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,76,0,0,Yes,Self-employed,Urban,89,20.08265892066068,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,79,0,0,Yes,Private,Rural,51,33.918085622095845,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,72,0,0,Yes,Private,Urban,137,29.979930852284145,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,74,0,1,No,Private,Urban,213,30.265553300334755,smokes,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,60,0,0,Yes,Private,Rural,116,24.78253191411379,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,69,0,0,Yes,Private,Urban,143,29.063733088060268,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,56,1,0,Yes,Self-employed,Urban,233,50.29619011253157,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,40,0,0,No,Self-employed,Urban,85,23.857614808391816,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,72,1,0,No,Self-employed,Urban,72,31.591340014677733,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,0,Yes,Self-employed,Rural,101,30.25519348022556,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,75,1,0,Yes,Self-employed,Rural,193,38.28083823275409,never smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,72,0,0,Yes,Govt_job,Rural,182,32.789071531118715,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,46,0,0,No,Govt_job,Urban,76,29.39585714981732,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,48,0,0,No,Private,Rural,104,30.86708005338179,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,82,1,0,Yes,Private,Urban,235,27.055161269781777,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,0,0,No,Private,Rural,90,21.25988105652881,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,70,0,0,Yes,Private,Urban,66,29.562228470321205,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,82,0,1,Yes,Private,Urban,72,22.85121089087743,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,82,1,0,No,Private,Urban,123,24.24642974693237,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,48,0,0,Yes,Private,Rural,99,26.353607674492647,never smoked,No,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,72,1,0,Yes,Private,Rural,238,35.53114142962619,never smoked,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,82,0,1,Yes,Private,Rural,124,24.588582623721887,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,0,0,Yes,Self-employed,Rural,66,22.87093424994478,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,81,0,0,Yes,Private,Urban,99,33.78062526476848,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,0,0,Yes,Self-employed,Urban,68,33.174520690622884,never smoked,No,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,40,0,0,Yes,Private,Rural,223,55.458277395809205,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,63,1,0,Yes,Self-employed,Rural,206,27.989426090493,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,30,0,0,Yes,Private,Rural,72,28.7965510400076,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,56,0,1,Yes,Private,Rural,237,31.9559566771356,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,68,0,0,Yes,Self-employed,Urban,83,27.337027387505948,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,77,0,0,Yes,Self-employed,Rural,89,14.975975654579656,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Male,58,1,0,Yes,Govt_job,Urban,219,19.005539579253647,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,32,0,0,Yes,Private,Rural,73,30.05277975358405,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,60,1,1,Yes,Private,Urban,108,37.81760291166469,smokes,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,46,0,0,Yes,Govt_job,Rural,102,28.22934797830403,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,71,0,0,Yes,Private,Rural,223,34.80067107783135,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,1,No,Private,Urban,207,30.61373955083687,smokes,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,62,0,0,Yes,Private,Rural,92,28.76797622600348,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,28,0,0,Yes,Private,Rural,71,28.814409029595872,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,37,0,0,No,Self-employed,Urban,81,24.29813322358024,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,59,0,0,Yes,Private,Urban,225,36.80012803028249,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,55,1,1,Yes,Private,Urban,217,41.94693764911551,smokes,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,83,0,0,No,Govt_job,Urban,63,26.70968806944669,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,54,0,0,Yes,Private,Rural,190,35.504106387390685,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,1,0,Yes,Private,Urban,245,27.55265023445489,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,65,0,1,Yes,Private,Urban,228,37.65737158832656,formerly smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,81,1,0,Yes,Self-employed,Rural,64,26.54221711269285,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,0,0,Yes,Self-employed,Rural,80,17.902546288557115,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,76,1,0,Yes,Self-employed,Rural,81,28.709426245540687,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,49,0,0,Yes,Self-employed,Rural,186,41.38855750768749,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,56,0,0,Yes,Private,Urban,198,35.704602224378064,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,85,0,0,Yes,Private,Rural,66,34.356525341964456,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,1,0,Yes,Self-employed,Rural,166,22.785358382458444,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,70,0,0,Yes,Private,Rural,84,22.243668812878983,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,68,1,1,No,Self-employed,Urban,74,38.24780296829231,never smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,82,1,0,Yes,Self-employed,Rural,175,22.719485319598835,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,83,0,1,Yes,Self-employed,Urban,260,29.893301999029298,formerly smoked,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,59,1,1,Yes,Private,Urban,120,35.662886496795764,smokes,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,83,1,0,No,Private,Urban,68,35.979103999181746,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,67,0,0,Yes,Private,Rural,231,41.45442337764944,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,79,0,0,No,Private,Rural,87,21.74826867890572,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,77,0,0,Yes,Self-employed,Rural,72,29.879692839688506,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,52,1,0,Yes,Private,Rural,83,30.38682759874932,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,0,0,Yes,Private,Rural,244,30.41193961510688,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,1,0,No,Private,Urban,135,21.283697134836785,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,52,1,1,Yes,Private,Urban,206,41.8108241371818,smokes,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,77,1,0,Yes,Private,Rural,65,23.070575913701973,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,60,0,1,Yes,Private,Rural,201,36.816577893641,formerly smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,62,1,1,Yes,Private,Urban,106,37.848155195759375,smokes,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,77,0,0,Yes,Self-employed,Rural,83,27.755542957126245,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,75,1,0,Yes,Private,Rural,66,22.277075398153748,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,52,1,0,Yes,Private,Rural,259,37.368522999038106,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,1,0,Yes,Private,Urban,71,21.880670261306257,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,1,0,Yes,Self-employed,Urban,97,35.4018989924487,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,1,Yes,Self-employed,Urban,256,30.144158634626965,formerly smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,68,0,0,Yes,Self-employed,Rural,73,24.89017359604861,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,69,1,0,Yes,Private,Rural,239,43.97078495005885,formerly smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,60,0,0,Yes,Private,Rural,235,27.1025520810293,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,1,0,Yes,Self-employed,Rural,96,33.59578512503762,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,39,0,0,No,Self-employed,Urban,89,24.162805747139817,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,76,1,0,Yes,Self-employed,Urban,127,29.4978956761204,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,1,1,Yes,Private,Urban,173,32.58700754719197,formerly smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,57,0,1,Yes,Private,Rural,241,33.135922513346905,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,77,1,1,Yes,Private,Urban,168,33.34022475890663,formerly smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,75,0,1,Yes,Private,Rural,103,32.4381512103024,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,1,0,Yes,Self-employed,Rural,75,24.805982697684986,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,52,0,0,Yes,Govt_job,Rural,108,29.2359333717446,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,66,0,0,Yes,Private,Urban,215,32.23162318170013,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,0,Yes,Private,Urban,113,25.594399800303133,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,62,0,0,Yes,Private,Urban,85,28.58727399373964,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,81,0,0,No,Govt_job,Urban,79,24.44439801519097,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,53,0,0,Yes,Private,Rural,94,29.24510167897912,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,69,1,1,Yes,Private,Urban,239,39.07332052621347,formerly smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,73,0,0,Yes,Self-employed,Rural,88,29.333851772351604,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,83,0,0,Yes,Private,Urban,73,27.12704226050435,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,41,0,0,Yes,Self-employed,Urban,103,30.983973753298493,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,74,0,0,Yes,Private,Rural,71,23.91984400281377,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,83,0,0,Yes,Private,Urban,184,29.026400241918704,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,55,1,0,Yes,Private,Urban,114,43.90114660396899,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,78,0,0,Yes,Private,Rural,191,27.00070738022829,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,0,0,No,Private,Urban,96,21.499627923360457,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,71,1,0,Yes,Private,Rural,244,31.61818119741833,never smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,67,1,0,No,Private,Rural,174,36.36893961962133,never smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,83,1,0,Yes,Self-employed,Rural,82,32.41913332932998,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,36,0,0,No,Self-employed,Urban,85,22.554362622085893,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,79,1,0,No,Private,Urban,125,21.510626306796222,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,78,0,0,Yes,Private,Urban,64,23.346592776611583,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,73,0,0,Yes,Private,Urban,108,29.67402822373853,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,63,0,0,Yes,Private,Urban,206,47.28614634549041,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,49,0,0,Yes,Private,Rural,225,55.04468511851287,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,0,Yes,Self-employed,Urban,136,23.30141870586223,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,50,0,0,Yes,Self-employed,Rural,195,38.42670633580709,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,1,0,Yes,Private,Rural,188,36.21067087203856,never smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,77,1,1,No,Private,Rural,89,26.402699575356863,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,56,0,0,Yes,Private,Urban,65,29.766225523297926,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,83,0,0,Yes,Private,Urban,110,22.653044979008445,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,53,0,1,Yes,Private,Rural,244,30.7947963769204,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,1,Yes,Private,Urban,144,26.483929757480265,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,0,Yes,Private,Urban,103,29.34048507014238,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,53,0,0,Yes,Private,Urban,103,27.882260429368124,smokes,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,75,1,0,Yes,Private,Urban,243,25.16675624169272,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,0,Yes,Self-employed,Rural,82,30.512252366549685,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,0,0,No,Private,Rural,95,22.78347338354037,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,52,1,0,Yes,Self-employed,Rural,177,32.664929798631555,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,1,0,Yes,Private,Rural,195,35.21718658477028,never smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,84,0,0,Yes,Self-employed,Urban,68,33.43830663518423,never smoked,No,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,51,0,0,Yes,Govt_job,Urban,59,42.847287722798335,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,56,1,0,Yes,Govt_job,Rural,68,32.977826016241934,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,84,1,1,Yes,Govt_job,Urban,216,27.596873641609385,formerly smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,63,0,0,Yes,Private,Rural,233,26.004152991426853,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,71,1,0,Yes,Private,Rural,251,35.295801334286175,never smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,68,0,0,Yes,Private,Rural,243,43.25698382978724,never smoked,No,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,46,1,0,Yes,Private,Rural,81,29.27878521409337,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,0,0,Yes,Private,Rural,90,26.152177031364364,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,79,0,0,Yes,Private,Rural,65,28.69722892915993,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,58,0,1,Yes,Private,Rural,194,35.05460997120675,formerly smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,72,1,0,Yes,Private,Urban,72,21.227011462547104,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,73,1,0,Yes,Private,Urban,225,25.99982254265244,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,58,1,0,Yes,Govt_job,Urban,79,29.2768258152088,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,79,0,0,Yes,Private,Urban,89,21.82074195572848,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,72,0,0,Yes,Self-employed,Rural,78,30.14323491763892,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,76,0,0,Yes,Private,Urban,70,32.01343164071459,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,71,1,0,Yes,Private,Rural,184,35.011152570975554,never smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,77,1,0,Yes,Private,Rural,85,28.96816517689709,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,0,1,No,Private,Urban,208,32.64937779333287,smokes,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,52,0,0,No,Private,Rural,109,33.11236105204586,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,78,0,1,Yes,Private,Rural,123,23.7464961638962,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,84,0,0,Yes,Self-employed,Rural,113,24.131895232890805,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,79,1,0,Yes,Self-employed,Urban,115,31.076780966399568,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,0,0,Yes,Self-employed,Urban,225,25.40849203975185,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,85,0,0,Yes,Self-employed,Rural,87,30.99626117333081,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,44,0,0,Yes,Private,Rural,57,30.61116910249516,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,74,1,0,No,Private,Urban,129,20.5952163163728,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,71,1,0,Yes,Private,Urban,228,25.74220361849349,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,1,1,Yes,Private,Urban,252,39.814995152830924,formerly smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,85,1,1,Yes,Govt_job,Urban,207,27.24934407812742,formerly smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,71,0,1,Yes,Private,Urban,215,31.848883394997348,formerly smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,66,0,0,Yes,Govt_job,Urban,254,38.9433273122318,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,0,Yes,Private,Urban,106,32.52543349452959,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,57,1,0,Yes,Govt_job,Urban,85,27.32256471770903,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,50,0,0,Yes,Private,Urban,98,25.526301118512603,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,48,1,0,Yes,Private,Rural,76,30.913896657222946,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,67,0,0,Yes,Govt_job,Rural,198,40.7371558784254,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,52,0,0,No,Private,Rural,106,30.032189609948148,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,84,0,0,Yes,Private,Urban,191,29.698934426850226,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,41,1,0,Yes,Private,Rural,65,37.69649955757858,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,1,1,Yes,Govt_job,Urban,218,29.380884009498818,formerly smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,76,0,0,Yes,Self-employed,Rural,84,16.021588360655645,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,37,0,0,Yes,Self-employed,Urban,93,28.06848836447113,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,53,0,0,Yes,Self-employed,Rural,94,25.02372084947184,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Female,77,1,0,Yes,Self-employed,Rural,179,23.926243487397976,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,0,No,Self-employed,Urban,92,28.546851764571496,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,81,0,0,Yes,Private,Rural,179,28.931821470536978,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,49,1,0,Yes,Private,Urban,95,27.97519096910836,never smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,66,0,1,Yes,Private,Rural,56,33.883853175487104,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,0,1,Yes,Private,Urban,213,29.15202962092524,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,64,0,0,Yes,Private,Rural,68,22.071614524773995,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,58,1,0,Yes,Private,Rural,250,36.9108277198138,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,0,0,Yes,Private,Urban,108,33.57763708059235,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,53,0,0,Yes,Private,Rural,51,27.754823000024267,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,86,0,1,Yes,Private,Urban,154,24.81455666784744,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,0,0,Yes,Private,Rural,262,31.34708375978513,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,1,0,Yes,Self-employed,Rural,64,28.75596964742575,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,66,0,1,Yes,Private,Urban,219,36.764534547350365,formerly smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,50,0,0,Yes,Private,Rural,98,29.77364494161437,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,48,0,0,Yes,Govt_job,Rural,109,27.94862572632893,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,78,0,0,Yes,Self-employed,Rural,77,29.607270820658552,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,70,0,0,Yes,Self-employed,Urban,80,26.82678690551797,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Male,58,0,0,Yes,Private,Rural,103,30.21836261493308,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,57,1,0,Yes,Self-employed,Rural,71,28.328722750712387,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,66,0,0,Yes,Private,Urban,199,44.613467063997234,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,66,0,0,Yes,Private,Rural,92,27.584711194326,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,68,0,1,Yes,Private,Rural,246,24.98107723775332,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,0,0,Yes,Self-employed,Urban,69,34.1675500320472,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,52,0,0,Yes,Private,Urban,95,28.754091300456,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,78,1,1,Yes,Govt_job,Urban,212,28.78197967358487,formerly smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,70,0,1,Yes,Private,Urban,229,33.265957096764225,formerly smoked,Yes,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,84,0,1,Yes,Private,Rural,106,30.62111957336976,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,85,0,0,Yes,Private,Urban,190,30.51224308441179,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,62,0,1,Yes,Private,Rural,193,36.24616817070249,formerly smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,81,1,0,No,Private,Urban,64,33.97910290358366,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,1,1,Yes,Private,Urban,256,39.84999653374154,formerly smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,80,1,0,Yes,Self-employed,Rural,182,22.09551037936483,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,60,0,0,Yes,Private,Urban,105,25.943447431904296,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,85,0,0,Yes,Self-employed,Rural,99,33.00381061950608,never smoked,No,24,Yes,Moderate,TIA,Neurologist,Clopidogrel + Blood Thinners,14
+Female,74,0,0,Yes,Private,Rural,90,27.588194722365945,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,82,0,0,No,Self-employed,Urban,92,26.73070980131087,never smoked,No,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,62,0,0,Yes,Private,Rural,120,24.072827289405858,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,83,0,1,Yes,Private,Urban,223,29.833154328963712,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,66,0,0,Yes,Govt_job,Rural,189,21.85404062418976,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,39,0,0,Yes,Self-employed,Urban,102,28.59648756894828,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,60,0,0,Yes,Private,Rural,236,26.715469476509217,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,52,0,0,Yes,Private,Rural,195,34.17874050325552,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,34,0,0,No,Self-employed,Urban,75,22.68655739895877,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,71,1,0,Yes,Self-employed,Rural,194,36.112364513991466,never smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,80,1,0,No,Private,Urban,200,47.05939660899697,never smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,71,1,0,No,Self-employed,Urban,83,31.31494487585536,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,55,1,0,Yes,Private,Urban,111,42.50460828087224,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,0,Yes,Govt_job,Urban,195,27.36059818749225,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,1,0,Yes,Private,Rural,75,20.27704708048019,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,63,1,0,Yes,Self-employed,Rural,75,28.79233435586952,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,59,0,0,Yes,Private,Urban,208,34.26737149322811,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,1,Yes,Private,Rural,126,25.99463874164172,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,77,0,0,Yes,Private,Urban,144,31.443945912191104,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,51,0,0,Yes,Govt_job,Rural,82,29.823663599734545,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,76,0,0,Yes,Private,Rural,98,24.95569787379401,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,71,0,1,Yes,Private,Rural,231,26.48965799861058,never smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,46,0,0,No,Govt_job,Urban,85,31.47788570309407,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,61,0,1,Yes,Self-employed,Urban,115,33.615082177073745,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,1,0,Yes,Self-employed,Urban,122,29.9818500426132,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,1,0,Yes,Private,Rural,188,37.13563406964859,never smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,77,0,1,Yes,Govt_job,Rural,110,26.19429909991553,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,64,1,0,Yes,Private,Rural,188,27.2766754769776,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,1,1,No,Private,Rural,86,25.42119067102361,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,64,0,0,Yes,Private,Rural,231,43.41232459542882,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,68,0,0,Yes,Govt_job,Urban,86,26.6611079453051,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,82,0,0,Yes,Govt_job,Urban,199,29.004439443342715,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,1,0,Yes,Self-employed,Urban,130,32.11059265465603,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,59,1,0,Yes,Govt_job,Urban,206,19.61836741456141,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,52,0,0,No,Self-employed,Urban,62,37.91851755269987,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,58,0,1,Yes,Self-employed,Urban,107,32.537949544497536,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,1,Yes,Private,Urban,59,22.322972311846296,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,48,0,0,Yes,Private,Rural,96,32.45326303364169,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,82,0,0,Yes,Private,Rural,74,22.0278064900272,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,46,1,0,Yes,Private,Urban,93,26.635245613120723,never smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,34,1,0,Yes,Private,Rural,54,39.15135137613513,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,0,Yes,Private,Urban,144,28.19789282599668,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,81,0,1,Yes,Govt_job,Rural,102,24.42707681921227,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,79,0,0,Yes,Private,Rural,71,28.99162114464037,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,72,1,0,Yes,Self-employed,Rural,188,36.29069479336733,never smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,62,1,0,Yes,Self-employed,Rural,59,26.126730512990047,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,62,1,0,Yes,Govt_job,Urban,221,20.965864776589903,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,60,0,1,Yes,Self-employed,Urban,116,34.46677432258775,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,66,1,1,Yes,Private,Urban,245,40.462402883491215,formerly smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,75,1,0,No,Private,Urban,104,22.928723007142693,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,55,1,0,Yes,Private,Urban,208,43.09325881277508,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,68,0,1,Yes,Self-employed,Urban,198,28.88662444232608,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,71,1,0,Yes,Private,Rural,238,32.26119227285074,never smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,77,0,0,Yes,Private,Urban,111,34.67322389021662,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,65,0,1,Yes,Private,Urban,191,38.44487052631809,smokes,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,85,0,0,Yes,Self-employed,Rural,86,32.17886940969751,never smoked,Yes,24,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,0,Yes,Private,Urban,97,20.391926184862715,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,76,0,0,Yes,Self-employed,Urban,75,35.12485237420298,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,65,0,1,Yes,Private,Rural,50,34.046454711501724,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,0,Yes,Private,Urban,115,30.188662174872068,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,75,0,1,Yes,Private,Rural,96,33.7561037412158,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,57,0,1,Yes,Private,Rural,238,33.052781803624725,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,68,0,0,Yes,Self-employed,Rural,71,26.06713912428965,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,50,0,0,Yes,Private,Urban,93,41.86797747178281,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,60,0,1,Yes,Private,Rural,195,35.80816205295633,formerly smoked,No,37,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,29,0,0,Yes,Private,Rural,70,31.18724053388842,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,53,0,0,Yes,Private,Rural,93,28.228901262200125,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,68,1,0,Yes,Self-employed,Urban,81,33.362128739398464,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,59,0,0,Yes,Private,Urban,105,28.10505484348233,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,83,0,1,Yes,Private,Rural,140,23.1185605434482,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,1,0,Yes,Private,Rural,84,22.77409736903305,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,71,0,1,Yes,Private,Rural,65,32.77572059159425,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,72,0,0,Yes,Self-employed,Urban,82,27.34735141665481,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,70,1,0,Yes,Self-employed,Urban,204,31.488483691399043,never smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,76,1,0,Yes,Self-employed,Urban,203,34.259928923632394,never smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,77,1,0,Yes,Private,Rural,252,35.20418226885171,never smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,53,1,0,Yes,Private,Urban,86,29.76805761400952,never smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,84,1,0,Yes,Private,Rural,84,21.550091639207324,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,49,0,0,Yes,Private,Urban,105,27.02243574397464,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,80,0,0,Yes,Private,Urban,112,23.433370688467665,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,69,0,0,Yes,Govt_job,Urban,90,26.572151909308115,never smoked,No,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,72,1,0,Yes,Self-employed,Rural,195,25.87335751142846,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,67,1,1,Yes,Private,Urban,254,40.55050117193001,formerly smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,73,0,1,Yes,Govt_job,Rural,213,28.987513801746367,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,0,Yes,Private,Rural,85,23.41839938131711,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,73,0,0,Yes,Self-employed,Urban,83,25.61127001751828,never smoked,No,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,67,1,1,No,Govt_job,Rural,223,30.10527282818624,never smoked,Yes,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,38,0,0,Yes,Self-employed,Urban,94,27.80945093287597,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,48,1,0,Yes,Self-employed,Urban,242,50.06696075975874,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,0,0,Yes,Private,Urban,94,22.339013532013382,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,76,1,1,Yes,Private,Rural,73,27.49305601985028,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,60,0,0,Yes,Private,Urban,90,27.19120234261109,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,80,1,0,Yes,Self-employed,Urban,132,31.482340100861244,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,49,0,0,Yes,Private,Urban,111,26.087686738752712,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,48,0,0,No,Private,Rural,97,32.269816601361185,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,67,1,1,No,Govt_job,Rural,221,31.28759963247532,never smoked,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,40,0,0,Yes,Private,Rural,55,30.473242442044423,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,72,1,0,Yes,Self-employed,Urban,204,29.867400537065205,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,77,1,1,Yes,Private,Urban,250,29.78596373374166,smokes,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,62,0,0,Yes,Private,Rural,85,21.02661544511012,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,63,0,0,Yes,Private,Urban,88,30.814986882388204,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,51,0,0,Yes,Private,Rural,99,30.74804756517773,smokes,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,74,1,0,Yes,Self-employed,Rural,165,22.19798365892388,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,1,0,Yes,Private,Rural,83,21.11503230039812,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,56,1,0,Yes,Govt_job,Urban,86,29.46199995949192,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,72,1,0,Yes,Self-employed,Urban,188,31.13016071226177,never smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,80,1,0,Yes,Self-employed,Rural,72,29.929739215241906,never smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,72,0,0,Yes,Private,Urban,145,28.58847706517095,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,80,1,0,Yes,Private,Rural,84,30.85856273800735,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,62,0,0,Yes,Private,Rural,93,29.701611442222664,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,76,1,0,No,Private,Urban,114,22.1055766506842,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,66,0,0,Yes,Private,Rural,235,29.12100370823872,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,0,0,Yes,Govt_job,Urban,78,28.539512452145136,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,77,1,0,Yes,Self-employed,Urban,191,23.738200022269023,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,1,Yes,Govt_job,Rural,109,23.837795252055137,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,54,0,0,Yes,Private,Urban,74,29.17774220708408,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,75,0,1,Yes,Govt_job,Rural,224,26.712359947509995,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,51,1,0,Yes,Private,Urban,79,27.32858196874781,never smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,56,1,0,Yes,Self-employed,Rural,69,26.357085699004923,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,80,0,1,Yes,Private,Urban,67,24.91506232448255,smokes,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,58,0,0,Yes,Private,Urban,223,36.74505986596159,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,56,0,0,Yes,Self-employed,Rural,197,40.12866377939991,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,0,0,Yes,Private,Urban,219,48.5162660420402,never smoked,No,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,48,0,0,Yes,Private,Urban,81,39.52811152215747,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,77,0,0,Yes,Private,Rural,194,28.861028259341857,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,1,0,Yes,Private,Rural,77,22.25336474983989,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,53,0,0,Yes,Private,Urban,224,35.51722402586756,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,1,1,Yes,Private,Rural,61,26.43511581946647,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,0,0,Yes,Private,Urban,112,32.03272853901606,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,1,1,No,Private,Rural,90,27.50951801856261,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,1,0,Yes,Self-employed,Rural,81,23.57256588053995,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,79,0,0,Yes,Private,Rural,95,28.649871549106024,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,55,0,0,Yes,Private,Urban,93,25.17528552329576,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,81,0,0,Yes,Private,Urban,71,25.87235406750385,never smoked,Yes,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,78,1,0,Yes,Self-employed,Urban,132,31.131786700893866,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,66,0,0,Yes,Private,Rural,239,41.77229686101023,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,1,0,Yes,Private,Rural,88,28.440532655729093,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,32,0,0,Yes,Private,Rural,71,31.61479457928833,smokes,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,55,0,0,Yes,Private,Rural,120,25.383686435625272,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,69,0,1,Yes,Self-employed,Urban,202,28.20560904412292,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,46,0,0,Yes,Private,Urban,94,42.397935634077605,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,27,0,0,Yes,Private,Rural,83,29.071925198069827,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,56,0,0,Yes,Private,Urban,230,35.5612690732116,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,77,0,0,Yes,Self-employed,Rural,166,34.45965349051306,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,47,0,0,Yes,Private,Rural,110,31.32587284486519,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,62,0,0,Yes,Private,Rural,224,27.72979586974873,never smoked,No,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,0,0,Yes,Private,Urban,104,24.727641011022023,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,57,0,0,No,Self-employed,Urban,63,35.77918745476802,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,59,0,1,Yes,Private,Rural,235,29.40688434647985,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,1,0,Yes,Private,Rural,191,36.76070062435771,never smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,76,0,1,Yes,Private,Urban,221,28.09189882583879,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,59,1,1,Yes,Private,Urban,120,38.17426661650475,smokes,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,84,1,1,Yes,Govt_job,Urban,225,29.61241930751019,formerly smoked,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,82,0,0,Yes,Private,Urban,70,27.53892222825759,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Male,46,0,0,No,Private,Rural,112,30.774006100921817,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,49,1,0,Yes,Private,Urban,94,29.717869995518328,never smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,61,0,1,Yes,Private,Rural,236,29.717645845453163,smokes,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,0,0,Yes,Self-employed,Urban,237,26.59255507414382,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,38,0,0,Yes,Private,Urban,75,28.111370186978952,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,61,0,0,No,Private,Urban,85,37.80859231740041,never smoked,No,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,54,1,0,Yes,Govt_job,Urban,70,27.55374002599368,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,54,0,0,Yes,Private,Rural,115,21.80174327514979,smokes,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,65,1,0,Yes,Self-employed,Rural,71,25.848952507123425,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,0,1,No,Private,Urban,199,29.73320693530968,smokes,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,76,0,0,Yes,Self-employed,Rural,87,29.350385827343743,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,61,1,0,Yes,Govt_job,Urban,71,26.229490851446368,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,82,0,1,No,Private,Urban,199,32.869555154733305,smokes,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,53,1,0,Yes,Govt_job,Rural,66,31.26291340340176,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,77,0,1,Yes,Self-employed,Rural,76,21.516195005651976,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,68,1,0,No,Self-employed,Urban,79,30.09543498305328,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,60,0,0,Yes,Private,Rural,120,25.519445503217387,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,44,0,0,No,Private,Rural,113,30.4395671213042,smokes,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,77,0,1,Yes,Private,Rural,110,31.91691095930325,never smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,84,1,1,Yes,Private,Urban,246,27.317039085567792,smokes,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,75,1,0,No,Private,Urban,121,19.037377873438714,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,1,0,No,Govt_job,Urban,97,20.617443704958628,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,60,0,1,Yes,Private,Rural,248,32.39682909876671,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,73,0,0,Yes,Private,Urban,76,25.809160072870903,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,80,0,0,Yes,Private,Urban,185,28.90964984339769,formerly smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,81,0,1,Yes,Private,Urban,135,27.066165034125355,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,0,0,Yes,Private,Urban,96,29.762285408472344,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,0,Yes,Private,Rural,86,23.99695401812017,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,49,0,0,Yes,Govt_job,Rural,105,28.05665123789766,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,83,1,1,Yes,Private,Urban,246,27.16491349526524,smokes,Yes,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,77,0,0,Yes,Private,Rural,237,33.6067742580719,never smoked,No,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,53,1,1,Yes,Private,Urban,206,41.28035458902605,smokes,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Male,47,0,0,No,Private,Rural,113,32.97418094159206,smokes,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,76,0,0,Yes,Private,Rural,84,24.704067829923225,never smoked,No,24,Yes,Early,TIA,General Physician,Aspirin,7
+Female,83,1,1,No,Private,Rural,80,27.018043719593,formerly smoked,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,63,0,0,Yes,Private,Rural,105,28.45495091370247,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,69,0,0,Yes,Self-employed,Urban,70,27.57472979476353,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,81,0,0,Yes,Private,Rural,88,28.33767467476166,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,73,0,0,Yes,Self-employed,Rural,72,24.82081175698677,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,75,0,1,Yes,Private,Rural,100,33.89037447113308,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,81,0,0,Yes,Self-employed,Rural,118,30.541919321190647,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,69,0,1,Yes,Govt_job,Rural,213,29.24923391374422,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,85,1,1,Yes,Govt_job,Urban,210,29.354423388564392,formerly smoked,No,7,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,56,0,0,Yes,Private,Rural,96,26.852997312430503,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,82,1,0,Yes,Self-employed,Rural,56,26.11875863697162,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,68,0,0,Yes,Self-employed,Urban,62,33.69708852846544,never smoked,No,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,59,0,0,Yes,Private,Urban,113,32.923755900451205,formerly smoked,Yes,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,62,0,0,Yes,Private,Rural,55,29.5996728649515,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,77,0,0,Yes,Private,Rural,220,34.23721467702241,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,46,0,0,Yes,Private,Rural,234,58.086434614494166,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,41,0,0,No,Self-employed,Urban,90,24.07627056609294,formerly smoked,No,13,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,60,0,0,Yes,Private,Urban,91,30.31367441045742,formerly smoked,No,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,80,0,1,Yes,Private,Urban,72,24.69059011733237,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,0,0,No,Private,Rural,91,23.963311097063784,never smoked,No,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,75,0,0,Yes,Private,Urban,98,28.54538801950528,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,72,0,1,Yes,Govt_job,Rural,223,27.594471314817355,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,65,0,0,Yes,Private,Urban,211,46.83290199267647,formerly smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,56,1,0,Yes,Govt_job,Urban,85,29.5856365794613,formerly smoked,Yes,7,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,72,1,0,Yes,Private,Urban,226,31.76289311973752,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,1,0,Yes,Self-employed,Rural,176,23.50681585085025,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,78,0,1,Yes,Private,Urban,71,24.64621268868814,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,52,0,0,Yes,Govt_job,Rural,96,26.50643709626889,formerly smoked,No,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,77,1,0,Yes,Self-employed,Rural,172,22.71557692633008,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,75,0,0,Yes,Private,Urban,82,31.242940249945445,smokes,No,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,0,0,Yes,Private,Urban,63,24.27638363041932,never smoked,No,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,41,0,0,Yes,Private,Rural,56,29.38926257024833,never smoked,Yes,24,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Female,75,0,0,Yes,Private,Urban,59,45.05702019408032,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,74,1,0,Yes,Self-employed,Urban,193,32.824213259917826,never smoked,Yes,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,83,0,0,Yes,Self-employed,Urban,225,26.22900690218536,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,0,0,Yes,Private,Rural,233,33.30188970312534,formerly smoked,Yes,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,75,1,0,Yes,Self-employed,Rural,84,31.80040681146756,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,53,0,0,Yes,Govt_job,Rural,95,27.810507668229643,formerly smoked,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,70,1,0,Yes,Self-employed,Rural,61,25.455309652377625,smokes,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,57,1,1,Yes,Private,Urban,120,35.792288084217965,smokes,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,67,1,0,Yes,Self-employed,Urban,82,32.41923589872994,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,62,0,1,Yes,Private,Urban,92,35.75884668499957,smokes,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,61,0,0,Yes,Private,Rural,123,23.857420310198467,smokes,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,85,0,0,Yes,Self-employed,Rural,83,18.16264920524233,never smoked,No,13,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,81,0,0,Yes,Self-employed,Urban,131,25.066216698815914,formerly smoked,Yes,24,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,79,1,0,Yes,Self-employed,Rural,174,25.69496428400364,never smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,51,0,0,Yes,Self-employed,Rural,198,38.43191399509667,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,76,1,0,Yes,Self-employed,Urban,202,30.83358969672732,never smoked,No,24,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,47,0,0,Yes,Private,Rural,229,54.60170035449038,never smoked,Yes,7,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,56,0,0,No,Private,Urban,80,38.190210046005895,never smoked,Yes,7,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,77,1,1,Yes,Private,Rural,61,29.331780583083034,never smoked,Yes,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,83,1,0,Yes,Self-employed,Rural,74,26.92896766019929,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,72,0,0,Yes,Self-employed,Urban,75,28.58853973506933,smokes,Yes,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Female,73,1,0,Yes,Private,Rural,83,25.014095297073,formerly smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,78,0,1,Yes,Private,Urban,223,29.37524334790224,never smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,0,0,Yes,Private,Rural,231,34.176129512958255,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,82,1,0,Yes,Self-employed,Rural,74,26.364122577062865,never smoked,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,0,0,Yes,Self-employed,Rural,81,22.456175068908976,formerly smoked,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7
+Male,58,1,0,Yes,Govt_job,Urban,206,22.009545019146547,smokes,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,65,0,1,Yes,Private,Urban,183,37.854380331765725,smokes,No,13,Yes,Critical,Ischemic,Stroke Specialist,Alteplase + Intensive Care Meds,21
+Female,76,1,0,Yes,Private,Rural,78,23.647080284950945,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,78,1,0,Yes,Private,Rural,72,23.835771776603583,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,71,0,0,Yes,Self-employed,Urban,64,35.138365842170685,never smoked,Yes,37,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,67,0,0,Yes,Private,Rural,134,31.772160777337184,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,80,0,0,Yes,Self-employed,Rural,90,15.198587854192304,never smoked,Yes,37,Yes,Early,Hemorrhagic,General Physician,Aspirin,7
+Male,76,0,1,Yes,Private,Rural,104,31.84961479802088,never smoked,No,37,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,76,0,0,Yes,Self-employed,Rural,119,32.73331184722113,never smoked,No,24,Yes,Moderate,TIA,Neurologist,Clopidogrel + Blood Thinners,14
+Male,64,0,0,Yes,Private,Rural,138,31.11419011501986,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,56,1,0,Yes,Self-employed,Rural,74,27.718734829579223,smokes,Yes,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,61,0,0,Yes,Private,Urban,210,44.73560997401477,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,72,0,0,Yes,Self-employed,Urban,198,33.156171960075206,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,70,1,0,Yes,Govt_job,Rural,110,29.1971412930907,formerly smoked,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,71,1,0,Yes,Private,Rural,72,23.53715222153027,formerly smoked,No,7,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,69,0,0,Yes,Private,Urban,220,46.69965007271031,never smoked,Yes,13,Yes,Moderate,Hemorrhagic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,56,0,1,Yes,Govt_job,Rural,117,35.06449304215694,smokes,No,13,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Female,63,0,0,Yes,Govt_job,Rural,212,41.70917858323153,formerly smoked,Yes,24,Yes,Moderate,Ischemic,Neurologist,Clopidogrel + Blood Thinners,14
+Male,56,0,0,Yes,Govt_job,Rural,78,30.09328363529384,smokes,No,37,Yes,Early,Ischemic,General Physician,Aspirin,7

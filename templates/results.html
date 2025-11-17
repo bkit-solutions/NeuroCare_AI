@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroCare AI: Treatment Recommendations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --vibrant-red: #FFD700; /* Gold yellow */
+            --dark-red: #DAA520; /* Goldenrod */
+            --deep-purple: #5D0E41;
+            --dark-blue: #00224D;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #00224D;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(93, 14, 65, 0.95) 0%, rgba(0, 34, 77, 0.9) 100%);
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #5D0E41 0%, #00224D 100%);
+        }
+
+        .glass-card {
+            background: rgba(93, 14, 65, 0.2);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .glass-nav {
+            background: rgba(0, 34, 77, 0.7);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+
+        .btn-primary {
+            background-color: var(--vibrant-red);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-red);
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .card-custom {
+            border-radius: 0.5rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .card-custom:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--vibrant-red);
+        }
+
+        /* Print-specific styles */
+        @media print {
+            .no-print {
+                display: none;
+            }
+            body {
+                background-color: white;
+                color: black;
+            }
+            .print-white {
+                background-color: white !important;
+                color: black !important;
+            }
+            .print-border {
+                border: 1px solid #ddd !important;
+            }
+            
+            /* Added print header with NeuroCare AI title */
+            .print-header {
+                display: block !important;
+                text-align: center;
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: black !important;
+                padding: 10px 0;
+                border-bottom: 2px solid #333;
+            }
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen">
+    <!-- Navigation -->
+    <nav class="fixed w-full glass-nav z-50 shadow-lg top-0">
+        <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
+            <a href="{{ url_for('home') }}#home"><h1 class="text-xl sm:text-2xl font-bold text-white">NeuroCare AI</h1></a>
+            <div class="md:hidden cursor-pointer text-3xl text-white" id="burger-menu">&#9776;</div>
+            <ul id="menu" class="hidden md:flex space-x-4 lg:space-x-8">
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#home" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Home</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#about" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">About Us</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#how-it-works" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">How It Works</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#insights" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Insights</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#team" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Team</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#contact" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Contact</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden w-full absolute top-full left-0 py-4 px-6">
+            <ul class="flex flex-col space-y-4">
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#home" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">Home</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#about" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">About Us</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#how-it-works" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">How It Works</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#insights" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">Insights</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#team" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">Team</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+                <li class="relative group">
+                    <a href="{{ url_for('home') }}#contact" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">Contact</a>
+                    <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Print Header - Only visible when printing -->
+    <div class="print-header" style="display: none;">
+        <h1>NeuroCare AI</h1>
+        <p>Treatment Recommendations</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 pt-24 pb-12">
+        <div class="max-w-5xl mx-auto">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+                <h2 class="text-2xl md:text-3xl font-bold flex items-center">
+                    <i class="fas fa-file-medical mr-3 text-[var(--vibrant-red)]"></i>Treatment Recommendations
+                </h2>
+                <button onclick="printReport()" class="btn-primary px-4 py-2 rounded-lg flex items-center gap-2 text-sm md:text-base">
+                    <i class="fas fa-print"></i>
+                    <span>Print Report</span>
+                </button>
+            </div>
+
+            <!-- Diagnosis Section -->
+            <div class="glass-card mb-8 rounded-xl overflow-hidden">
+                <div class="bg-gradient-to-r from-[#5D0E41] to-[#00224D] px-6 py-4">
+                    <h4 class="text-xl font-bold flex items-center">
+                        <i class="fas fa-diagnosis mr-3 text-[var(--vibrant-red)]"></i>Clinical Diagnosis
+                    </h4>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <div class="mb-6">
+                                <h5 class="text-lg font-semibold mb-3 text-[var(--vibrant-red)] flex items-center">
+                                    <i class="fas fa-notes-medical mr-2"></i>Stroke Type
+                                </h5>
+                                <div class="bg-opacity-20 bg-blue-500 p-3 rounded-lg">
+                                    <span class="bg-[var(--vibrant-red)] text-[var(--dark-blue)] text-sm px-2 py-1 rounded mr-2 font-medium">
+                                        {{ results.stroke_type }}
+                                    </span>
+                                    {{ 'Most common type' if results.stroke_type == 'Ischemic' else 'Requires special care' }}
+                                </div>
+                            </div>
+                            <div>
+                                <h5 class="text-lg font-semibold mb-3 text-[var(--vibrant-red)] flex items-center">
+                                    <i class="fas fa-clock mr-2"></i>Stroke Stage
+                                </h5>
+                                <div class="bg-opacity-20 bg-blue-500 p-3 rounded-lg">
+                                    <span class="bg-[var(--vibrant-red)] text-[var(--dark-blue)] text-sm px-2 py-1 rounded mr-2 font-medium">
+                                        {{ results.stroke_stage }}
+                                    </span>
+                                    {{ 'Critical condition' if results.stroke_stage == 'Critical' else 'Manageable condition' }}
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h5 class="text-lg font-semibold mb-3 text-[var(--vibrant-red)] flex items-center">
+                                <i class="fas fa-user-md mr-2"></i>Treatment Protocol
+                            </h5>
+                            <div class="space-y-3">
+                                <div class="bg-opacity-20 bg-blue-500 p-3 rounded-lg flex items-center">
+                                    <i class="fas fa-stethoscope mr-3 text-[var(--vibrant-red)]"></i>
+                                    <div>
+                                        <div class="text-sm opacity-80">Primary Care</div>
+                                        <div class="font-medium">{{ results.recommended_doctor }}</div>
+                                    </div>
+                                </div>
+                                <div class="bg-opacity-20 bg-blue-500 p-3 rounded-lg flex items-center">
+                                    <i class="fas fa-calendar-check mr-3 text-[var(--vibrant-red)]"></i>
+                                    <div>
+                                        <div class="text-sm opacity-80">Treatment Duration</div>
+                                        <div class="font-medium">{{ results.recommended_duration }} days</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medication Plan Section -->
+            <div class="glass-card mb-8 rounded-xl overflow-hidden">
+                <div class="bg-gradient-to-r from-[#5D0E41] to-[#00224D] px-6 py-4">
+                    <h4 class="text-xl font-bold flex items-center">
+                        <i class="fas fa-prescription-bottle mr-3 text-[var(--vibrant-red)]"></i>Medication Protocol
+                    </h4>
+                </div>
+                <div class="p-6">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <!-- Primary Medication -->
+                        <div class="glass-card rounded-lg overflow-hidden hover:shadow-lg">
+                            <div class="bg-[var(--vibrant-red)] text-[var(--dark-blue)] px-4 py-3">
+                                <h5 class="font-semibold flex items-center">
+                                    <i class="fas fa-capsules mr-2"></i>Primary Medication
+                                </h5>
+                            </div>
+                            <div class="p-4">
+                                <p class="text-lg font-medium mb-2">{{ results.medication_plan.primary_medication }}</p>
+                                <p class="text-sm opacity-70">First-line treatment for this condition</p>
+                            </div>
+                        </div>
+
+                        <!-- Secondary Medications -->
+                        <div class="glass-card rounded-lg overflow-hidden hover:shadow-lg">
+                            <div class="bg-[var(--vibrant-red)] text-[var(--dark-blue)] px-4 py-3">
+                                <h5 class="font-semibold flex items-center">
+                                    <i class="fas fa-pills mr-2"></i>Secondary Medications
+                                </h5>
+                            </div>
+                            <div class="p-4">
+                                <ul class="space-y-2">
+                                    {% for med in results.medication_plan.secondary_medications %}
+                                    <li class="flex items-start">
+                                        <i class="fas fa-check-circle text-[var(--vibrant-red)] mt-1 mr-2"></i>
+                                        <span>{{ med }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Additional Medications -->
+                        <div class="glass-card rounded-lg overflow-hidden hover:shadow-lg">
+                            <div class="bg-[var(--vibrant-red)] text-[var(--dark-blue)] px-4 py-3">
+                                <h5 class="font-semibold flex items-center">
+                                    <i class="fas fa-medkit mr-2"></i>Supportive Care
+                                </h5>
+                            </div>
+                            <div class="p-4">
+                                <ul class="space-y-2">
+                                    {% for med in results.medication_plan.additional_medications %}
+                                    <li class="flex items-start">
+                                        <i class="fas fa-plus-circle text-[var(--vibrant-red)] mt-1 mr-2"></i>
+                                        <span>{{ med }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Monitoring Section -->
+                    <div class="mt-8">
+                        <div class="glass-card rounded-lg overflow-hidden">
+                            <div class="bg-[var(--vibrant-red)] text-[var(--dark-blue)] px-4 py-3">
+                                <h5 class="font-semibold flex items-center">
+                                    <i class="fas fa-heartbeat mr-2"></i>Care Plan
+                                </h5>
+                            </div>
+                            <div class="p-4">
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div class="bg-opacity-20 bg-blue-500 p-3 rounded-lg">
+                                        <p class="flex items-center">
+                                            <i class="fas fa-clock text-[var(--vibrant-red)] mr-2"></i>
+                                            <span class="opacity-80 mr-2">Monitoring Frequency:</span>
+                                            <strong>{{ results.medication_plan.monitoring_frequency }}</strong>
+                                        </p>
+                                        <p class="text-sm mt-1 opacity-60 ml-6">Recommended check-up intervals</p>
+                                    </div>
+                                    <div class="bg-opacity-20 bg-blue-500 p-3 rounded-lg">
+                                        <p class="flex items-center">
+                                            <i class="fas fa-hospital text-[var(--vibrant-red)] mr-2"></i>
+                                            <span class="opacity-80 mr-2">Intensive Care Required:</span>
+                                            <strong>{{ "Yes" if results.medication_plan.intensive_care_required else "No" }}</strong>
+                                        </p>
+                                        <p class="text-sm mt-1 opacity-60 ml-6">Hospitalization requirements</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="glass-card p-4 rounded-xl">
+                <h5 class="text-lg font-semibold mb-3 flex items-center text-[var(--vibrant-red)]">
+                    <i class="fas fa-exclamation-triangle mr-2"></i>Important Notes
+                </h5>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-xs text-[var(--vibrant-red)] mt-1.5 mr-2"></i>
+                        <span>This report should be reviewed by a qualified physician</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-xs text-[var(--vibrant-red)] mt-1.5 mr-2"></i>
+                        <span>Medication dosages to be determined by treating doctor</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-xs text-[var(--vibrant-red)] mt-1.5 mr-2"></i>
+                        <span>Monitor for any adverse reactions</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-6 mt-auto" style="background: linear-gradient(135deg, #5D0E41 0%, #00224D 100%);">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-3">&copy; 2025 NeuroCare AI. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-white hover:text-[var(--vibrant-red)] transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                <a href="#" class="text-white hover:text-[var(--vibrant-red)] transition duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="#" class="text-white hover:text-[var(--vibrant-red)] transition duration-300"><i class="fab fa-github text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <style type="text/css">
+        @media print {
+            /* Reset background colors and make text black for better printing */
+            body, .glass-card, .glass-nav, .gradient-bg, .hero-bg {
+                background: white !important;
+                background-color: white !important;
+                background-image: none !important;
+                color: black !important;
+                box-shadow: none !important;
+                border-color: #ddd !important;
+            }
+            
+            /* Hide elements not needed for printing */
+            nav, footer, .btn-primary, button, .mobile-menu, #burger-menu {
+                display: none !important;
+            }
+            
+            /* Remove padding added for fixed navbar */
+            body {
+                padding-top: 0 !important;
+            }
+            
+            /* Ensure text is readable when printed */
+            h1, h2, h3, h4, h5, h6, p, li, td, th {
+                color: black !important;
+            }
+            
+            /* Adjust card styles for print */
+            .glass-card {
+                border: 1px solid #ddd !important;
+                page-break-inside: avoid;
+                margin-bottom: 15px !important;
+            }
+            
+            /* Make container full width for print */
+            .container, .w-full, .max-w-4xl {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            
+            /* Adjust header gradient backgrounds */
+            .glass-card > div:first-child {
+                background: #f0f0f0 !important;
+                border-bottom: 1px solid #ddd !important;
+                color: black !important;
+            }
+            
+            /* Handle SVGs and icons for print */
+            svg, .fas, .fab, .far, .fa {
+                color: black !important;
+            }
+            
+            /* Show the print header */
+            .print-header {
+                display: block !important;
+                text-align: center;
+                font-size: 28px;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: black !important;
+                padding: 20px 0;
+                border-bottom: 2px solid #333;
+            }
+            
+            .print-header h1 {
+                color: black !important;
+                font-size: 28px;
+                margin-bottom: 5px;
+            }
+            
+            .print-header p {
+                color: black !important;
+                font-size: 18px;
+            }
+            
+            /* Ensure proper page breaks */
+            section, .glass-card {
+                page-break-inside: avoid;
+            }
+            
+            /* Remove hover effects */
+            .glass-card:hover {
+                transform: none !important;
+                box-shadow: none !important;
+            }
+        }
+    </style>
+    <script>
+        // Mobile menu toggle
+        document.getElementById('burger-menu').addEventListener('click', function() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('right-0');
+            menu.classList.toggle('w-full');
+            menu.classList.toggle('bg-[var(--dark-blue)]');
+            menu.classList.toggle('p-4');
+            menu.classList.toggle('space-y-4');
+            menu.classList.toggle('rounded-b-lg');
+            menu.classList.toggle('shadow-lg');
+        });
+
+        function printReport() {
+            // Store the original title
+            const originalTitle = document.title;
+            
+            // Change the title for the print
+            document.title = "NeuroCare AI - Treatment Recommendations";
+            
+            // Print the document
+            window.print();
+            
+            // Restore the original title
+            document.title = originalTitle;
+        }
+    </script>
+</body>
+</html>

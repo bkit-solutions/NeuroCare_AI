@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section bg-primary text-white py-5 animate__animated animate__fadeIn">
+    <div class="container text-center">
+        <h1 class="display-4 mb-4">
+            <i class="fas fa-brain me-3"></i>NeuroCare AI
+        </h1>
+        <p class="lead">Revolutionizing Stroke Diagnosis & Treatment Recommendations</p>
+        <a href="{{ url_for('home') }}" class="btn btn-light btn-lg mt-3 animate__animated animate__pulse animate__infinite">
+            Try Now <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 animate__animated animate__slideInUp">Key Features</h2>
+        <div class="row g-4">
+            <div class="col-md-4 feature-card">
+                <div class="card h-100 shadow animate__animated animate__fadeIn">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-robot fa-3x text-primary"></i>
+                        </div>
+                        <h4>AI-Powered Analysis</h4>
+                        <p>Deep learning models analyze CT scans with 98% accuracy</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 feature-card">
+                <div class="card h-100 shadow animate__animated animate__fadeIn animate__delay-1s">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-prescription fa-3x text-success"></i>
+                        </div>
+                        <h4>Smart Recommendations</h4>
+                        <p>Personalized treatment plans based on patient history</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 feature-card">
+                <div class="card h-100 shadow animate__animated animate__fadeIn animate__delay-2s">
+                    <div class="card-body text-center">
+                        <div class="feature-icon mb-3">
+                            <i class="fas fa-clock fa-3x text-info"></i>
+                        </div>
+                        <h4>Real-time Results</h4>
+                        <p>Instant diagnosis and treatment recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 animate__animated animate__slideInUp">Our Team</h2>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-4 team-member">
+                <div class="card h-100 shadow animate__animated animate__zoomIn">
+                    <img src="{{ url_for('static', filename='images/team.jpg') }}" class="card-img-top" alt="Team Member">
+                    <div class="card-body text-center">
+                        <h4>Alex</h4>
+                        <p class="text-muted">Lead Researcher</p>
+                        <div class="social-links">
+                            <a href="#" class="text-primary mx-2"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-primary mx-2"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more team members similarly -->
+        </div>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="py-5 bg-dark text-white">
+    <div class="container">
+        <h2 class="text-center mb-5 animate__animated animate__slideInUp">How It Works</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="process-step animate__animated animate__fadeInLeft">
+                    <div class="step-number">1</div>
+                    <h4>Upload Scan</h4>
+                    <p>Submit CT/MRI scans through our secure portal</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="process-step animate__animated animate__fadeInRight">
+                    <div class="step-number">2</div>
+                    <h4>AI Analysis</h4>
+                    <p>Our neural networks process the scan in seconds</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<style>
+    .hero-section {
+        padding: 100px 0;
+        background: linear-gradient(45deg, #1e3c72, #2a5298);
+    }
+    
+    .feature-card:hover {
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+    
+    .team-member:hover .card {
+        transform: rotate(3deg);
+        transition: all 0.3s ease;
+    }
+    
+    .process-step {
+        padding: 30px;
+        border-radius: 15px;
+        background: rgba(255,255,255,0.1);
+    }
+    
+    .step-number {
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        color: #1e3c72;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="w-full max-w-4xl mx-auto px-4 ">
+    <!-- Results Card -->
+    {% if message %}
+    <div class="glass-card mb-8 overflow-hidden rounded-2xl shadow-lg {% if 'Normal' in message %}border-green-400{% else %}border-red-400{% endif %} border">
+        <div class="p-5 {% if 'Normal' in message %}bg-gradient-to-r from-green-600 to-green-700{% else %}bg-gradient-to-r from-red-600 to-red-700{% endif %} text-white text-center">
+            <h4 class="text-xl font-bold">
+                <i class="fas fa-{% if 'Normal' in message %}check-circle{% else %}exclamation-triangle{% endif %} mr-2"></i>
+                Analysis Results
+            </h4>
+        </div>
+        <div class="p-6 bg-opacity-20 text-center">
+            <h5 class="text-lg font-medium mb-4">{{ message }}</h5>
+
+            {% if stroke_detected %}
+            <hr class="my-4 border-t border-gray-300">
+            <div class="mt-4">
+                <a href="{{ url_for('patient') }}" class="btn-primary inline-block px-6 py-3 rounded-full text-white font-medium">
+                    <i class="fas fa-file-medical mr-2"></i>
+                    Get Treatment Recommendations
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endif %}
+    
+
+    <!-- Upload Card -->
+    <div class="glass-card rounded-2xl shadow-lg overflow-hidden mb-8">
+        <div class="p-5 bg-gradient-to-r from-blue-600 to-purple-700 text-white text-center">
+            <h3 class="text-xl font-bold"><i class="fas fa-upload mr-2"></i> Brain Scan Analysis</h3>
+        </div>
+        <div class="p-6 text-center">
+            <form id="uploadForm" method="POST" enctype="multipart/form-data" action="{{ url_for('predict_stroke') }}">
+                <div class="mb-6">
+                    <label for="imageUpload" class="block cursor-pointer">
+                        <i class="fas fa-brain text-5xl text-[var(--vibrant-red)] mb-4"></i>
+                        <h4 class="text-lg font-medium mb-2">Upload CT Scan Image</h4>
+                    </label>
+                    <input type="file" class="w-full px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-gray-200" id="imageUpload" name="image" accept="image/*" required onchange="previewImage(event)">
+                    <div class="text-sm text-gray-400 mt-2">Supported formats: JPEG, PNG</div>
+                </div>
+
+                <!-- Centered Image Preview (Before Analysis) -->
+                <div class="flex justify-center">
+                    <img id="imagePreview" src="#" alt="Image Preview"
+                        class="max-w-xs mt-4 hidden border-2 border-gray-700 p-1 rounded-lg"
+                        style="max-width: 300px;">
+                </div>
+
+                <button type="submit" class="btn-primary w-full rounded-full py-3 px-6 mt-4 font-medium text-white">
+                    <i class="fas fa-search-medical mr-2"></i> Analyze Scan
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="glass-card rounded-2xl shadow-lg overflow-hidden mb-8">
+        <div class="p-5 bg-gradient-to-r from-cyan-600 to-blue-700 text-white text-center">
+            <h4 class="text-xl font-bold"><i class="fas fa-info-circle mr-2"></i> How It Works</h4>
+        </div>
+        <div class="p-6 text-center">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex flex-col items-center">
+                    <div class="text-4xl text-[var(--vibrant-red)] mb-3">
+                        <i class="fas fa-upload"></i>
+                    </div>
+                    <h5 class="text-lg font-medium mb-2">Upload Scan</h5>
+                    <p class="text-gray-400">Provide a clear CT/MRI scan image</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="text-4xl text-[var(--vibrant-red)] mb-3">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h5 class="text-lg font-medium mb-2">AI Analysis</h5>
+                    <p class="text-gray-400">Neural network detects abnormalities</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="text-4xl text-[var(--vibrant-red)] mb-3">
+                        <i class="fas fa-file-medical"></i>
+                    </div>
+                    <h5 class="text-lg font-medium mb-2">Get Results</h5>
+                    <p class="text-gray-400">Immediate diagnosis & recommendations</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for Image Preview Before Upload -->
+<script>
+    function previewImage(event) {
+        var input = event.target;
+        var preview = document.getElementById('imagePreview');
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block'; // Show the image
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+{% endblock %}

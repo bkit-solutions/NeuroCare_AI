@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}NeuroCare AI: Stroke Prediction System{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --vibrant-red: #FFD700; /* Gold yellow */
+            --dark-red: #DAA520; /* Goldenrod */
+            --deep-purple: #5D0E41;
+            --dark-blue: #00224D;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #00224D;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding-top: 80px;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(93, 14, 65, 0.95) 0%, rgba(0, 34, 77, 0.9) 100%);
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #5D0E41 0%, #00224D 100%);
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 1rem;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--vibrant-red);
+        }
+
+
+        .glass-card {
+            background: rgba(93, 14, 65, 0.2);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 215, 0, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 0 15px rgba(255, 215, 0, 0.2);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .glass-nav {
+            background: rgba(0, 34, 77, 0.7);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+        }
+        .reflection {
+            position: relative;
+        }
+        
+        .reflection::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 5%;
+            width: 90%;
+            height: 20px;
+            background: linear-gradient(to bottom, rgba(255, 215, 0, 0.3), transparent); /* Changed from rgba(255, 32, 78, 0.3) */
+            filter: blur(4px);
+            transform: scaleY(-1);
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .btn-primary {
+            background-color: var(--vibrant-red);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--dark-red);
+            filter: brightness(1.1);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .mobile-menu {
+            background: rgba(0, 34, 77, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        
+    </style>
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body class="text-white">
+  <!-- Navigation -->
+  <nav class="fixed w-full glass-nav z-50 shadow-lg top-0">
+    <div class="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
+        <a href="{{ url_for('home') }}#home"><h1 class="text-xl sm:text-2xl font-bold text-white">NeuroCare AI</h1></a>
+        <div class="md:hidden cursor-pointer text-3xl text-white" id="burger-menu">&#9776;</div>
+        <ul id="menu" class="hidden md:flex space-x-4 lg:space-x-8">
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#home" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Home</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#about" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">About Us</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#how-it-works" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">How It Works</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#insights" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Insights</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#team" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Team</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#contact" class="nav-link text-sm lg:text-base hover:text-[var(--vibrant-red)] transition duration-300">Contact</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu hidden w-full absolute top-full left-0 py-4 px-6">
+        <ul class="flex flex-col space-y-4">
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#home" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">Home</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#about" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">About Us</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#how-it-works" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">How It Works</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#insights" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">Insights</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#team" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">Team</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+            <li class="relative group">
+                <a href="{{ url_for('home') }}#contact" class="block py-2 hover:text-[var(--vibrant-red)] transition duration-300">Contact</a>
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--vibrant-red)] group-hover:w-full transition-all duration-300"></span>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <main class="container mx-auto px-4 mt-6 flex-grow " >
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="py-6 mt-auto" style="background: linear-gradient(135deg, #5D0E41 0%, #00224D 100%);">
+        <div class="container mx-auto px-4 text-center">
+            <p class="mb-3">&copy; 2025 NeuroCare AI. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="text-white hover:text-[var(--vibrant-red)] transition duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                <a href="#" class="text-white hover:text-[var(--vibrant-red)] transition duration-300"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="#" class="text-white hover:text-[var(--vibrant-red)] transition duration-300"><i class="fab fa-github text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            burgerMenu.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!mobileMenu.contains(event.target) && !burgerMenu.contains(event.target) && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // Get all links with hash
+    const links = document.querySelectorAll('a[href^="#"]');
+    
+    // Add click event to each link
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Get the target section
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+                // Smooth scroll to the section
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobile-menu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            }
+        });
+    });
+});
+    </script>
+    {% block extra_js %}{% endblock %}
+</body>
+
+</html>
