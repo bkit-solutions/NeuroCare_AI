@@ -70,7 +70,7 @@ NeroCare_AI/
 
 ### 1️⃣ Clone the Repository  
 ```bash
-git clone https://github.com/yourusername/NeroCare_AI.git
+git clone https://github.com/bkit-solutions/NeuroCare_AI.git
 cd NeroCare_AI
 ```
 
